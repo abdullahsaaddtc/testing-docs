@@ -123,7 +123,7 @@ nav:
 # - type: link
 #   title: Page Title
 #   path: docs/path/to/file.md
-#   icon: mdi:icon-name
+#   icon: mdi:icon-name  # ✅ Icons supported
 #
 # SECTION (with items):
 # - type: section
@@ -131,35 +131,48 @@ nav:
 #   items:
 #     - title: Page Title
 #       path: docs/path/to/file.md
-#       icon: mdi:icon-name
+#       icon: mdi:icon-name  # ✅ Icons supported
 #
 # COLLAPSIBLE/NESTED ITEM:
 # - type: section
 #   title: Section Name
 #   items:
 #     - title: Parent Item
-#       icon: mdi:icon-name
-#       path: docs/optional-parent-page.md  # Optional
+#       icon: mdi:icon-name              # ✅ Parent icon supported
+#       path: docs/optional-parent-page.md  # Optional: make parent clickable
 #       collapsible: true
 #       defaultOpen: false  # Optional: true/false
 #       children:
-#         - title: Child Item
-#           path: docs/path/to/child.md
-#           icon: mdi:icon-name
+#         - title: Child Item 1
+#           path: docs/path/to/child1.md
+#           icon: mdi:icon-name          # ✅ Child icons supported
+#         - title: Child Item 2
+#           path: docs/path/to/child2.md
+#           icon: mdi:another-icon       # ✅ Each child can have different icon
 #
-# DEEP NESTING (children can have children):
+# DEEP NESTING (unlimited depth, all levels support icons):
 #     - title: Level 1
-#       icon: mdi:icon-name
+#       icon: mdi:icon-name              # ✅ Level 1 icon
 #       collapsible: true
 #       children:
 #         - title: Level 2
 #           path: docs/path.md
-#           icon: mdi:icon-name
+#           icon: mdi:icon-name          # ✅ Level 2 icon
 #           collapsible: true
 #           children:
 #             - title: Level 3
 #               path: docs/deep.md
-#               icon: mdi:icon-name
+#               icon: mdi:icon-name      # ✅ Level 3 icon
+#               children:
+#                 - title: Level 4
+#                   path: docs/deeper.md
+#                   icon: mdi:icon-name  # ✅ Even level 4+ support icons!
+#
+# KEY POINTS:
+# - ✅ ALL items support icons (parent, children, nested children, etc.)
+# - ✅ Each item can have a different icon
+# - ✅ Icons work at ANY nesting level
+# - ✅ Parent items with children can have both an icon AND a path
 #
 # ============================================================================
 # POPULAR MDI ICONS
@@ -216,3 +229,54 @@ nav:
 #   mdi:information, mdi:help-circle
 #
 # Browse all: https://pictogrammers.com/library/mdi/
+#
+# ============================================================================
+# COMPLETE EXAMPLE: Sections + Nesting + Icons at All Levels
+# ============================================================================
+#
+# - type: section
+#   title: Developer Resources
+#   items:
+#     # Simple link with icon
+#     - title: API Overview
+#       path: docs/api/index.md
+#       icon: mdi:api                    # ✅ Icon on simple link
+#
+#     # Collapsible parent with icon + children with icons
+#     - title: REST API
+#       icon: mdi:cloud-braces           # ✅ Parent has icon
+#       collapsible: true
+#       defaultOpen: true
+#       children:
+#         - title: Authentication
+#           path: docs/api/rest/auth.md
+#           icon: mdi:shield-key         # ✅ Child has icon
+#         - title: Endpoints
+#           path: docs/api/rest/endpoints.md
+#           icon: mdi:api                # ✅ Child has different icon
+#
+#     # Deep nesting - ALL levels have icons
+#     - title: SDKs
+#       icon: mdi:package-variant        # ✅ Level 1 icon
+#       collapsible: true
+#       children:
+#         - title: JavaScript
+#           icon: mdi:language-javascript # ✅ Level 2 icon
+#           collapsible: true
+#           children:
+#             - title: Installation
+#               path: docs/sdk/js/install.md
+#               icon: mdi:download         # ✅ Level 3 icon
+#             - title: Quick Start
+#               path: docs/sdk/js/quickstart.md
+#               icon: mdi:lightning-bolt   # ✅ Level 3 different icon
+#         - title: Python
+#           icon: mdi:language-python     # ✅ Level 2 icon
+#           collapsible: true
+#           children:
+#             - title: Installation
+#               path: docs/sdk/python/install.md
+#               icon: mdi:download         # ✅ Level 3 icon
+#             - title: Examples
+#               path: docs/sdk/python/examples.md
+#               icon: mdi:code-braces      # ✅ Level 3 icon
