@@ -1,6 +1,6 @@
 nav:
   # ============================================================================
-  # TOP-LEVEL LINKS (Optional - can be removed if not needed)
+  # TOP-LEVEL LINKS
   # ============================================================================
   - type: link
     title: Home
@@ -26,22 +26,48 @@ nav:
         icon: mdi:lightning-bolt
 
   # ============================================================================
-  # SECTION: USER GUIDE
+  # SECTION: GUIDES
   # ============================================================================
   - type: section
-    title: User Guide
+    title: Guides
     items:
+      # Dashboard - simple link
       - title: Dashboard
         path: docs/user-guide/dashboard.md
         icon: mdi:view-dashboard
 
+      # AI Assistant - simple link
       - title: AI Assistant
         path: docs/user-guide/ai-assistant.md
         icon: mdi:robot
 
-      - title: Salesforce Integration
-        path: docs/user-guide/salesforce-integration.md
-        icon: mdi:cloud-sync
+      # Integrations - collapsible with children
+      - title: Integrations
+        icon: mdi:connection
+        collapsible: true
+        defaultOpen: true
+        children:
+          - title: Salesforce Integration
+            path: docs/user-guide/salesforce-integration.md
+            icon: mdi:cloud-sync
+
+      # Advanced Topics - collapsible with nested children
+      - title: Advanced
+        icon: mdi:cog
+        collapsible: true
+        defaultOpen: false
+        children:
+          - title: Custom Workflows
+            path: docs/advanced/custom-workflows.md
+            icon: mdi:workflow
+
+          - title: Security
+            path: docs/advanced/security.md
+            icon: mdi:security
+
+          - title: Troubleshooting
+            path: docs/advanced/troubleshooting.md
+            icon: mdi:wrench
 
   # ============================================================================
   # SECTION: API REFERENCE
@@ -62,113 +88,131 @@ nav:
         icon: mdi:webhook
 
   # ============================================================================
-  # SECTION: ADVANCED
+  # SECTION: RESOURCES
   # ============================================================================
   - type: section
-    title: Advanced
+    title: Resources
     items:
-      - title: Custom Workflows
-        path: docs/advanced/custom-workflows.md
-        icon: mdi:workflow
-
-      - title: Security
-        path: docs/advanced/security.md
-        icon: mdi:security
-
-      - title: Troubleshooting
-        path: docs/advanced/troubleshooting.md
-        icon: mdi:wrench
-
-  # ============================================================================
-  # SECTION: TESTING & REFERENCE
-  # ============================================================================
-  - type: section
-    title: Testing & Reference
-    items:
-      - title: Markdown Cheat Sheet
-        path: docs/markdown-cheatsheet.md
+      # Markdown Resources - collapsible with children
+      - title: Markdown Testing
         icon: mdi:language-markdown
+        collapsible: true
+        defaultOpen: false
+        children:
+          - title: Markdown Cheat Sheet
+            path: docs/markdown-cheatsheet.md
+            icon: mdi:format-list-checks
 
-      - title: Real-World Examples
-        path: docs/markdown-real-world-examples.md
-        icon: mdi:file-document-multiple
+          - title: Real-World Examples
+            path: docs/markdown-real-world-examples.md
+            icon: mdi:file-document-multiple
 
-      - title: Ultimate Complete
-        path: docs/markdown-ultimate-complete.md
-        icon: mdi:file-check
+          - title: Ultimate Complete
+            path: docs/markdown-ultimate-complete.md
+            icon: mdi:file-check
 
-      - title: Extreme Stress Test
-        path: docs/markdown-extreme-stress-test.md
-        icon: mdi:fire
+          - title: Extreme Stress Test
+            path: docs/markdown-extreme-stress-test.md
+            icon: mdi:fire
 
 # ============================================================================
-# ICON REFERENCE GUIDE
+# STRUCTURE REFERENCE
 # ============================================================================
-# Common MDI icons you can use:
 #
-# Navigation & Actions:
-#   mdi:home, mdi:menu, mdi:arrow-right, mdi:arrow-left, mdi:close
-#   mdi:chevron-right, mdi:chevron-down, mdi:dots-vertical
+# SIMPLE LINK (Top-level):
+# - type: link
+#   title: Page Title
+#   path: docs/path/to/file.md
+#   icon: mdi:icon-name
+#
+# SECTION (with items):
+# - type: section
+#   title: Section Name
+#   items:
+#     - title: Page Title
+#       path: docs/path/to/file.md
+#       icon: mdi:icon-name
+#
+# COLLAPSIBLE/NESTED ITEM:
+# - type: section
+#   title: Section Name
+#   items:
+#     - title: Parent Item
+#       icon: mdi:icon-name
+#       path: docs/optional-parent-page.md  # Optional
+#       collapsible: true
+#       defaultOpen: false  # Optional: true/false
+#       children:
+#         - title: Child Item
+#           path: docs/path/to/child.md
+#           icon: mdi:icon-name
+#
+# DEEP NESTING (children can have children):
+#     - title: Level 1
+#       icon: mdi:icon-name
+#       collapsible: true
+#       children:
+#         - title: Level 2
+#           path: docs/path.md
+#           icon: mdi:icon-name
+#           collapsible: true
+#           children:
+#             - title: Level 3
+#               path: docs/deep.md
+#               icon: mdi:icon-name
+#
+# ============================================================================
+# POPULAR MDI ICONS
+# ============================================================================
+#
+# General:
+#   mdi:home, mdi:menu, mdi:chevron-right, mdi:chevron-down
 #
 # Documentation:
-#   mdi:book, mdi:book-open, mdi:book-open-page-variant, mdi:file-document
-#   mdi:file-document-multiple, mdi:notebook, mdi:text-box
+#   mdi:book, mdi:book-open, mdi:book-open-page-variant
+#   mdi:file-document, mdi:file-document-multiple
 #
 # Getting Started:
-#   mdi:rocket, mdi:rocket-launch, mdi:lightning-bolt, mdi:flash
-#   mdi:download, mdi:upload
+#   mdi:rocket, mdi:rocket-launch, mdi:lightning-bolt
+#   mdi:download, mdi:upload, mdi:play
 #
-# User & Account:
-#   mdi:account, mdi:account-circle, mdi:account-group, mdi:face-agent
-#
-# Dashboard & Analytics:
-#   mdi:view-dashboard, mdi:chart-line, mdi:chart-bar, mdi:analytics
-#   mdi:poll, mdi:graph
+# Dashboard & UI:
+#   mdi:view-dashboard, mdi:chart-line, mdi:chart-bar
+#   mdi:poll, mdi:graph, mdi:monitor-dashboard
 #
 # AI & Automation:
-#   mdi:robot, mdi:brain, mdi:robot-outline, mdi:chip, mdi:auto-fix
+#   mdi:robot, mdi:brain, mdi:auto-fix, mdi:chip
 #
 # Integration & Sync:
-#   mdi:cloud-sync, mdi:sync, mdi:connection, mdi:lan-connect
-#   mdi:api, mdi:webhook
+#   mdi:cloud-sync, mdi:sync, mdi:connection
+#   mdi:api, mdi:webhook, mdi:lan-connect
 #
 # Security:
-#   mdi:security, mdi:shield, mdi:shield-key, mdi:lock, mdi:key
-#   mdi:two-factor-authentication
+#   mdi:security, mdi:shield, mdi:shield-key
+#   mdi:lock, mdi:key, mdi:two-factor-authentication
 #
-# Settings & Configuration:
-#   mdi:cog, mdi:settings, mdi:tune, mdi:wrench, mdi:tools
+# Settings & Tools:
+#   mdi:cog, mdi:settings, mdi:wrench, mdi:tools
+#   mdi:tune, mdi:palette
 #
-# Workflow & Process:
-#   mdi:workflow, mdi:sitemap, mdi:graph, mdi:source-branch
-#   mdi:timeline, mdi:git-branch
+# Workflow:
+#   mdi:workflow, mdi:sitemap, mdi:source-branch
+#   mdi:timeline, mdi:git-branch, mdi:flow-chart
 #
-# Code & Development:
-#   mdi:code-tags, mdi:code-braces, mdi:console, mdi:terminal
-#   mdi:file-code, mdi:xml
+# Code & Dev:
+#   mdi:code-tags, mdi:code-braces, mdi:console
+#   mdi:terminal, mdi:file-code
 #
-# Testing & QA:
-#   mdi:test-tube, mdi:bug, mdi:beaker, mdi:flask
-#   mdi:fire, mdi:speedometer
+# Testing:
+#   mdi:test-tube, mdi:bug, mdi:beaker
+#   mdi:fire, mdi:speedometer, mdi:flask
 #
-# Communication:
-#   mdi:email, mdi:message, mdi:forum, mdi:chat, mdi:comment
+# Markdown:
+#   mdi:language-markdown, mdi:language-markdown-outline
+#   mdi:format-text, mdi:format-list-checks
 #
-# Status Indicators:
-#   mdi:check, mdi:check-circle, mdi:alert, mdi:alert-circle
+# Status:
+#   mdi:check, mdi:check-circle, mdi:alert
 #   mdi:information, mdi:help-circle
 #
-# Files & Storage:
-#   mdi:folder, mdi:file, mdi:file-multiple, mdi:database
-#   mdi:archive, mdi:package
-#
-# Search & Filter:
-#   mdi:magnify, mdi:filter, mdi:filter-variant, mdi:search-web
-#
-# Media:
-#   mdi:image, mdi:video, mdi:play, mdi:pause
-#
-# Markdown specific:
-#   mdi:language-markdown, mdi:language-markdown-outline
-#
-# Browse all icons at: https://pictogrammers.com/library/mdi/
+# Browse all: https://pictogrammers.com/library/mdi/
