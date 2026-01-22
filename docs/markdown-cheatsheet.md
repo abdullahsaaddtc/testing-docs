@@ -284,7 +284,7 @@ Term 2
 
 ### Image Links
 
-[![Alt text](https://via.placeholder.com/150)](https://example.com)
+[![Alt text](https://picsum.photos/150/150)](https://example.com)
 
 ### URLs and Email Addresses
 
