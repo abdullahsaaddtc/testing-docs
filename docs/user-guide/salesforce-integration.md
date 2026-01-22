@@ -14,8 +14,8 @@ Learn how to connect, configure, and optimize your Salesforce integration with S
 1. Navigate to **Settings → Integrations**
 2. Click **"Connect Salesforce"**
 3. Choose environment:
-   - ○ Production
-   - ○ Sandbox
+   - Production
+   - Sandbox
 4. Click **"Authorize"**
 
 You'll be redirected to Salesforce login:
