@@ -206,14 +206,6 @@ Visualize your sales pipeline:
 Stay updated on recent changes:
 
 ```
-10:45 AM | 📝 Sarah created Opportunity "Acme Corp"
-10:23 AM | 📞 John logged call with Enterprise Inc
-09:56 AM | ✉️ Lead "Jane Doe" converted to Contact
-09:30 AM | 📊 Report "Q1 Pipeline" generated
-```
-
-**Activity Stream:**
-```
 10:45 AM | Sarah created Opportunity "Acme Corp"
 10:23 AM | John logged call with Enterprise Inc
 09:56 AM | Lead "Jane Doe" converted to Contact
