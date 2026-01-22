@@ -280,7 +280,7 @@ This tutorial will walk you through creating a custom dashboard with real-time d
 
 **What you'll build:**
 
-![Dashboard Preview](https://via.placeholder.com/800x400)
+![Dashboard Preview](https://picsum.photos/800/400)
 
 ---
 
@@ -592,7 +592,7 @@ npm run dev
 
 Open your browser to `http://localhost:5173` and you should see:
 
-![Dashboard Running](https://via.placeholder.com/800x400)
+![Dashboard Running](https://picsum.photos/800/400)
 
 ---
 

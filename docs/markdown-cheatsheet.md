@@ -328,51 +328,51 @@ Here's another footnote[^note].
 
 ### Basic Images
 
-![Alt text](https://via.placeholder.com/400x200)
+![Alt text](https://picsum.photos/400/200)
 
-![Image with title](https://via.placeholder.com/400x200 "Hover for title")
+![Image with title](https://picsum.photos/400/200 "Hover for title")
 
 ### Reference Style Images
 
 ![Alt text][image-ref]
 
-[image-ref]: https://via.placeholder.com/400x200 "Reference image"
+[image-ref]: https://picsum.photos/400/200 "Reference image"
 
 ### Images with Links
 
-[![Clickable image](https://via.placeholder.com/300x150)](https://example.com)
+[![Clickable image](https://picsum.photos/300/150)](https://example.com)
 
 ### Images with Different Sizes (using HTML)
 
-<img src="https://via.placeholder.com/100x100" alt="Small" width="100" height="100">
+<img src="https://picsum.photos/100/100" alt="Small" width="100" height="100">
 
-<img src="https://via.placeholder.com/200x200" alt="Medium" width="200">
+<img src="https://picsum.photos/200/200" alt="Medium" width="200">
 
-<img src="https://via.placeholder.com/300x200" alt="Large" width="300">
+<img src="https://picsum.photos/300/200" alt="Large" width="300">
 
 ### Aligned Images (using HTML)
 
 <div align="center">
-  <img src="https://via.placeholder.com/400x200" alt="Centered">
+  <img src="https://picsum.photos/400/200" alt="Centered">
 </div>
 
 <div align="right">
-  <img src="https://via.placeholder.com/200x100" alt="Right aligned">
+  <img src="https://picsum.photos/200/100" alt="Right aligned">
 </div>
 
 ### Images with Captions
 
 <figure>
-  <img src="https://via.placeholder.com/400x200" alt="Image with caption">
+  <img src="https://picsum.photos/400/200" alt="Image with caption">
   <figcaption>This is a caption below the image</figcaption>
 </figure>
 
 ### Multiple Images in a Row
 
 <div style="display: flex; gap: 10px;">
-  <img src="https://via.placeholder.com/150x150" alt="Image 1">
-  <img src="https://via.placeholder.com/150x150" alt="Image 2">
-  <img src="https://via.placeholder.com/150x150" alt="Image 3">
+  <img src="https://picsum.photos/150/150" alt="Image 1">
+  <img src="https://picsum.photos/150/150" alt="Image 2">
+  <img src="https://picsum.photos/150/150" alt="Image 3">
 </div>
 
 ### Relative Image Paths
@@ -383,7 +383,7 @@ Here's another footnote[^note].
 
 ### Image with Emoji
 
-![🎉 Celebration](https://via.placeholder.com/200x100)
+![🎉 Celebration](https://picsum.photos/200/100)
 
 ---
 
@@ -1049,8 +1049,8 @@ commit abc123def456
 
 | Icon | Name | Description |
 |------|------|-------------|
-| ![](https://via.placeholder.com/50x50) | Product 1 | First product |
-| ![](https://via.placeholder.com/50x50) | Product 2 | Second product |
+| ![](https://picsum.photos/50/50) | Product 1 | First product |
+| ![](https://picsum.photos/50/50) | Product 2 | Second product |
 
 ### List with Everything
 
@@ -1062,7 +1062,7 @@ commit abc123def456
    console.log("Code under first item");
    ```
 
-   ![Image under first item](https://via.placeholder.com/300x150)
+   ![Image under first item](https://picsum.photos/300/150)
 
 2. **Second item** with [a link](https://example.com)
 
@@ -1098,7 +1098,7 @@ commit abc123def456
 > - List item 1
 > - List item 2
 >
-> ![Image in blockquote](https://via.placeholder.com/200x100)
+> ![Image in blockquote](https://picsum.photos/200/100)
 >
 > [Link in blockquote](https://example.com)
 
@@ -1125,7 +1125,7 @@ def hello():
 - List item
   - Nested item
 
-![Image](https://via.placeholder.com/300x150)
+![Image](https://picsum.photos/300/150)
 
 <details>
 <summary>Nested collapsible</summary>

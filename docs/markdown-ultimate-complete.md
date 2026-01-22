@@ -31,44 +31,44 @@ This document contains **EVERY SINGLE POSSIBLE** markdown pattern, combination, 
 
 | Product | Image | Description | Price |
 |---------|-------|-------------|-------|
-| Product 1 | ![Product 1](https://via.placeholder.com/100x100) | High quality product | $99.99 |
-| Product 2 | ![Product 2](https://via.placeholder.com/100x100) | Premium product | $149.99 |
-| Product 3 | ![Product 3](https://via.placeholder.com/100x100) | Luxury product | $199.99 |
+| Product 1 | ![Product 1](https://picsum.photos/100/100) | High quality product | $99.99 |
+| Product 2 | ![Product 2](https://picsum.photos/100/100) | Premium product | $149.99 |
+| Product 3 | ![Product 3](https://picsum.photos/100/100) | Luxury product | $199.99 |
 
 ### Multiple Images in Same Cell
 
 | Category | Gallery | Info |
 |----------|---------|------|
-| Electronics | ![](https://via.placeholder.com/80x80) ![](https://via.placeholder.com/80x80) ![](https://via.placeholder.com/80x80) | Three products |
-| Clothing | ![](https://via.placeholder.com/80x80) ![](https://via.placeholder.com/80x80) | Two products |
+| Electronics | ![](https://picsum.photos/80/80) ![](https://picsum.photos/80/80) ![](https://picsum.photos/80/80) | Three products |
+| Clothing | ![](https://picsum.photos/80/80) ![](https://picsum.photos/80/80) | Two products |
 
 ### Images in Lists
 
 - **Item with image:**
 
-  ![List Image 1](https://via.placeholder.com/300x150)
+  ![List Image 1](https://picsum.photos/300/150)
 
   Description below the image
 
 - **Another item:**
 
-  ![List Image 2](https://via.placeholder.com/300x150)
+  ![List Image 2](https://picsum.photos/300/150)
 
   More content here
 
 1. **Ordered list with images:**
 
-   ![Ordered 1](https://via.placeholder.com/250x125)
+   ![Ordered 1](https://picsum.photos/250/125)
 
 2. **Second item:**
 
-   ![Ordered 2](https://via.placeholder.com/250x125)
+   ![Ordered 2](https://picsum.photos/250/125)
 
 ### Images in Blockquotes
 
 > Here's a quote with an image:
 >
-> ![Quote Image](https://via.placeholder.com/400x200)
+> ![Quote Image](https://picsum.photos/400/200)
 >
 > The image is inside the blockquote!
 
@@ -77,9 +77,9 @@ This document contains **EVERY SINGLE POSSIBLE** markdown pattern, combination, 
 <details>
 <summary>Click to see images</summary>
 
-![Hidden Image 1](https://via.placeholder.com/300x150)
+![Hidden Image 1](https://picsum.photos/300/150)
 
-![Hidden Image 2](https://via.placeholder.com/300x150)
+![Hidden Image 2](https://picsum.photos/300/150)
 
 You can hide multiple images in collapsible sections!
 
@@ -89,7 +89,7 @@ You can hide multiple images in collapsible sections!
 
 <figure>
   <a href="https://example.com">
-    <img src="https://via.placeholder.com/400x200" alt="Clickable image">
+    <img src="https://picsum.photos/400/200" alt="Clickable image">
   </a>
   <figcaption>Click the image above to visit example.com</figcaption>
 </figure>
@@ -97,33 +97,33 @@ You can hide multiple images in collapsible sections!
 ### Images Side by Side (Grid)
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-  <img src="https://via.placeholder.com/200x200" alt="Image 1">
-  <img src="https://via.placeholder.com/200x200" alt="Image 2">
-  <img src="https://via.placeholder.com/200x200" alt="Image 3">
+  <img src="https://picsum.photos/200/200" alt="Image 1">
+  <img src="https://picsum.photos/200/200" alt="Image 2">
+  <img src="https://picsum.photos/200/200" alt="Image 3">
 </div>
 
 ### Images with Different Sizes
 
 <div style="display: flex; align-items: center; gap: 20px;">
-  <img src="https://via.placeholder.com/100x100" alt="Small">
-  <img src="https://via.placeholder.com/200x200" alt="Medium">
-  <img src="https://via.placeholder.com/300x300" alt="Large">
+  <img src="https://picsum.photos/100/100" alt="Small">
+  <img src="https://picsum.photos/200/200" alt="Medium">
+  <img src="https://picsum.photos/300/300" alt="Large">
 </div>
 
 ### Rounded Images
 
-<img src="https://via.placeholder.com/150x150" alt="Rounded" style="border-radius: 50%;">
+<img src="https://picsum.photos/150/150" alt="Rounded" style="border-radius: 50%;">
 
 ### Images with Borders and Shadows
 
-<img src="https://via.placeholder.com/300x200" alt="Styled" style="border: 3px solid #3498db; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;">
+<img src="https://picsum.photos/300/200" alt="Styled" style="border: 3px solid #3498db; box-shadow: 0 4px 8px rgba(0,0,0,0.2); border-radius: 8px;">
 
 ### Overlapping Images
 
 <div style="position: relative; height: 200px;">
-  <img src="https://via.placeholder.com/200x150" style="position: absolute; top: 0; left: 0; z-index: 1;">
-  <img src="https://via.placeholder.com/200x150" style="position: absolute; top: 30px; left: 30px; z-index: 2;">
-  <img src="https://via.placeholder.com/200x150" style="position: absolute; top: 60px; left: 60px; z-index: 3;">
+  <img src="https://picsum.photos/200/150" style="position: absolute; top: 0; left: 0; z-index: 1;">
+  <img src="https://picsum.photos/200/150" style="position: absolute; top: 30px; left: 30px; z-index: 2;">
+  <img src="https://picsum.photos/200/150" style="position: absolute; top: 60px; left: 60px; z-index: 3;">
 </div>
 
 ---
@@ -134,9 +134,9 @@ You can hide multiple images in collapsible sections!
 
 | Feature | Screenshot | Code Example | Status |
 |---------|------------|--------------|--------|
-| Authentication | ![Auth](https://via.placeholder.com/100x60) | `auth.login()` | ✅ |
-| Dashboard | ![Dash](https://via.placeholder.com/100x60) | `dashboard.render()` | ✅ |
-| Analytics | ![Analytics](https://via.placeholder.com/100x60) | `analytics.track()` | 🚧 |
+| Authentication | ![Auth](https://picsum.photos/100/60) | `auth.login()` | ✅ |
+| Dashboard | ![Dash](https://picsum.photos/100/60) | `dashboard.render()` | ✅ |
+| Analytics | ![Analytics](https://picsum.photos/100/60) | `analytics.track()` | 🚧 |
 
 ### Table with Links and Badges
 
@@ -284,12 +284,12 @@ You can hide multiple images in collapsible sections!
   <div style="border: 2px solid #3498db; padding: 20px; border-radius: 8px;">
     <h3>Column 1</h3>
     <p>Content in first column</p>
-    <img src="https://via.placeholder.com/200x150" alt="Grid 1">
+    <img src="https://picsum.photos/200/150" alt="Grid 1">
   </div>
   <div style="border: 2px solid #e74c3c; padding: 20px; border-radius: 8px;">
     <h3>Column 2</h3>
     <p>Content in second column</p>
-    <img src="https://via.placeholder.com/200x150" alt="Grid 2">
+    <img src="https://picsum.photos/200/150" alt="Grid 2">
   </div>
 </div>
 
@@ -314,19 +314,19 @@ You can hide multiple images in collapsible sections!
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
   <div style="background: #f0f0f0; padding: 15px; text-align: center; border-radius: 4px;">
-    <img src="https://via.placeholder.com/100x100" alt="1" style="width: 100%;">
+    <img src="https://picsum.photos/100/100" alt="1" style="width: 100%;">
     <p>Item 1</p>
   </div>
   <div style="background: #f0f0f0; padding: 15px; text-align: center; border-radius: 4px;">
-    <img src="https://via.placeholder.com/100x100" alt="2" style="width: 100%;">
+    <img src="https://picsum.photos/100/100" alt="2" style="width: 100%;">
     <p>Item 2</p>
   </div>
   <div style="background: #f0f0f0; padding: 15px; text-align: center; border-radius: 4px;">
-    <img src="https://via.placeholder.com/100x100" alt="3" style="width: 100%;">
+    <img src="https://picsum.photos/100/100" alt="3" style="width: 100%;">
     <p>Item 3</p>
   </div>
   <div style="background: #f0f0f0; padding: 15px; text-align: center; border-radius: 4px;">
-    <img src="https://via.placeholder.com/100x100" alt="4" style="width: 100%;">
+    <img src="https://picsum.photos/100/100" alt="4" style="width: 100%;">
     <p>Item 4</p>
   </div>
 </div>
@@ -337,7 +337,7 @@ You can hide multiple images in collapsible sections!
   <div style="border: 2px solid #9b59b6; padding: 20px; border-radius: 8px;">
     <h3>Main Content (2/3 width)</h3>
     <p>This takes up more space</p>
-    <img src="https://via.placeholder.com/400x200" style="width: 100%;">
+    <img src="https://picsum.photos/400/200" style="width: 100%;">
   </div>
   <div style="border: 2px solid #f39c12; padding: 20px; border-radius: 8px;">
     <h3>Sidebar (1/3 width)</h3>
@@ -353,7 +353,7 @@ You can hide multiple images in collapsible sections!
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 20px 0;">
   <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <img src="https://via.placeholder.com/300x150" style="width: 100%; display: block;">
+    <img src="https://picsum.photos/300/150" style="width: 100%; display: block;">
     <div style="padding: 15px;">
       <h4 style="margin: 0 0 10px 0;">Card Title 1</h4>
       <p style="margin: 0; color: #666;">Card description goes here</p>
@@ -361,7 +361,7 @@ You can hide multiple images in collapsible sections!
     </div>
   </div>
   <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <img src="https://via.placeholder.com/300x150" style="width: 100%; display: block;">
+    <img src="https://picsum.photos/300/150" style="width: 100%; display: block;">
     <div style="padding: 15px;">
       <h4 style="margin: 0 0 10px 0;">Card Title 2</h4>
       <p style="margin: 0; color: #666;">Card description goes here</p>
@@ -369,7 +369,7 @@ You can hide multiple images in collapsible sections!
     </div>
   </div>
   <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <img src="https://via.placeholder.com/300x150" style="width: 100%; display: block;">
+    <img src="https://picsum.photos/300/150" style="width: 100%; display: block;">
     <div style="padding: 15px;">
       <h4 style="margin: 0 0 10px 0;">Card Title 3</h4>
       <p style="margin: 0; color: #666;">Card description goes here</p>
@@ -618,7 +618,7 @@ You can hide multiple images in collapsible sections!
 > console.log("Code in quote");
 > ```
 >
-> ![Image in quote](https://via.placeholder.com/300x150)
+> ![Image in quote](https://picsum.photos/300/150)
 >
 > [Link in quote](https://example.com)
 >
@@ -663,7 +663,7 @@ function test() {
 }
 ```
 
-![Images work](https://via.placeholder.com/400x200)
+![Images work](https://picsum.photos/400/200)
 
 > Blockquotes also work
 >
@@ -701,7 +701,7 @@ This is getting deep!
 
    Regular paragraph text under the list item.
 
-   ![Image in list](https://via.placeholder.com/300x150)
+   ![Image in list](https://picsum.photos/300/150)
 
    ```javascript
    // Code in list
@@ -741,7 +741,7 @@ This is getting deep!
 
 | Column 1 | Column 2 | Column 3 |
 |----------|----------|----------|
-| ![](https://via.placeholder.com/100x80) | **Bold text**<br>`code`<br>*italic* | <ul><li>List</li><li>Items</li></ul> |
+| ![](https://picsum.photos/100/80) | **Bold text**<br>`code`<br>*italic* | <ul><li>List</li><li>Items</li></ul> |
 | `code block` | [Link](/) | <details><summary>Click</summary>Hidden!</details> |
 | <div style="background: #3498db; color: white; padding: 10px; text-align: center;">Custom</div> | ```js<br>code<br>``` | ✅ ❌ ⚠️ |
 
@@ -755,7 +755,7 @@ This is getting deep!
 
 ### Link + Image + Bold + Italic
 
-[![***Bold Italic Clickable Image***](https://via.placeholder.com/300x150)](https://example.com)
+[![***Bold Italic Clickable Image***](https://picsum.photos/300/150)](https://example.com)
 
 ### List + Blockquote + Code + Image
 
@@ -764,7 +764,7 @@ This is getting deep!
   >
   > And an image:
   >
-  > ![](https://via.placeholder.com/250x125)
+  > ![](https://picsum.photos/250/125)
 
 ### Table + List + Code + Image + Links
 
@@ -772,7 +772,7 @@ This is getting deep!
 |---------|---------|
 | **Lists** | <ul><li>Item 1</li><li>Item 2</li></ul> |
 | **Code** | `console.log("test")` |
-| **Images** | ![](https://via.placeholder.com/80x60) |
+| **Images** | ![](https://picsum.photos/80/60) |
 | **Links** | [Click here](/) |
 | **Mixed** | `code` + **bold** + [link](/) |
 
@@ -784,7 +784,7 @@ This is getting deep!
 | Type | Example | Status |
 |------|---------|--------|
 | Code | ```js<br>const x = 1;<br>``` | ✅ |
-| Image | ![](https://via.placeholder.com/100x75) | ✅ |
+| Image | ![](https://picsum.photos/100/75) | ✅ |
 | List | <ul><li>A</li><li>B</li></ul> | ✅ |
 
 </details>
@@ -990,7 +990,7 @@ Currencies: $ € £ ¥ ₹ ₽ ₿
 > }
 > ```
 >
-> ![Image at level 2](https://via.placeholder.com/200x100)
+> ![Image at level 2](https://picsum.photos/200/100)
 >
 > > Quote at level 2
 > >
@@ -1022,7 +1022,7 @@ Currencies: $ € £ ¥ ₹ ₽ ₿
 
 ### Mix of Everything in One Line
 
-**Bold** *italic* ~~strike~~ `code` [link](/) ![img](https://via.placeholder.com/20x20) <span style="color:red;">colored</span> ✅ 🚀 &copy;
+**Bold** *italic* ~~strike~~ `code` [link](/) ![img](https://picsum.photos/20/20) <span style="color:red;">colored</span> ✅ 🚀 &copy;
 
 ---
 
@@ -1063,7 +1063,7 @@ console.log("Left side");
 > - `Code`
 > - Everything
 
-![Right Image](https://via.placeholder.com/200x150)
+![Right Image](https://picsum.photos/200/150)
 
 <details>
 <summary>Collapsible Right</summary>

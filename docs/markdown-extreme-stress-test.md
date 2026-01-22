@@ -15,26 +15,26 @@ This document pushes markdown rendering to its absolute limits. Every impossible
 
 ### Images Inside Everything
 
-#### Image in Header ![](https://via.placeholder.com/30x30)
+#### Image in Header ![](https://picsum.photos/30/30)
 
-**Image in bold: ![](https://via.placeholder.com/20x20)**
+**Image in bold: ![](https://picsum.photos/20/20)**
 
-*Image in italic: ![](https://via.placeholder.com/20x20)*
+*Image in italic: ![](https://picsum.photos/20/20)*
 
 `Image in code: (can't actually work but test handling)`
 
-[Image in link text ![](https://via.placeholder.com/20x20)](https://example.com)
+[Image in link text ![](https://picsum.photos/20/20)](https://example.com)
 
-- Image in list: ![](https://via.placeholder.com/100x50)
-  - Nested with image: ![](https://via.placeholder.com/100x50)
-    - Triple nested: ![](https://via.placeholder.com/100x50)
+- Image in list: ![](https://picsum.photos/100/50)
+  - Nested with image: ![](https://picsum.photos/100/50)
+    - Triple nested: ![](https://picsum.photos/100/50)
 
 > Image in quote:
-> ![](https://via.placeholder.com/200x100)
+> ![](https://picsum.photos/200/100)
 > > Nested quote with image:
-> > ![](https://via.placeholder.com/150x75)
+> > ![](https://picsum.photos/150/75)
 
-<kbd>Keyboard ![](https://via.placeholder.com/15x15)</kbd>
+<kbd>Keyboard ![](https://picsum.photos/15/15)</kbd>
 
 ---
 
@@ -341,7 +341,7 @@ Content with `code`
 |------|---------|--------|---------|
 | **Text** | Bold, *italic*, ~~strike~~ | ✅ | [Edit](#) [Delete](#) |
 | **Code** | `const x = 10;` | ✅ | [View](#) [Copy](#) |
-| **Image** | ![](https://via.placeholder.com/50x50) | ✅ | [Zoom](#) [Download](#) |
+| **Image** | ![](https://picsum.photos/50/50) | ✅ | [Zoom](#) [Download](#) |
 | **Link** | [Click me](https://example.com) | ✅ | [Open](#) [Copy](#) |
 | **List** | <ul><li>A</li><li>B</li><li>C</li></ul> | ✅ | [Expand](#) |
 | **Quote** | <blockquote>A quote</blockquote> | ✅ | [Reply](#) |
@@ -360,7 +360,7 @@ Content with `code`
 
 <div style="border: 2px solid #3498db; padding: 15px; border-radius: 8px;">
   <h4>Card 1</h4>
-  <img src="https://via.placeholder.com/150x100" style="width: 100%;">
+  <img src="https://picsum.photos/150/100" style="width: 100%;">
   <p><strong>Bold</strong> and <code>code</code></p>
   <ul>
     <li>Item 1</li>
@@ -370,21 +370,21 @@ Content with `code`
 
 <div style="border: 2px solid #2ecc71; padding: 15px; border-radius: 8px;">
   <h4>Card 2</h4>
-  <img src="https://via.placeholder.com/150x100" style="width: 100%;">
+  <img src="https://picsum.photos/150/100" style="width: 100%;">
   <blockquote>A quote here</blockquote>
   <a href="#">Link</a>
 </div>
 
 <div style="border: 2px solid #f39c12; padding: 15px; border-radius: 8px;">
   <h4>Card 3</h4>
-  <img src="https://via.placeholder.com/150x100" style="width: 100%;">
+  <img src="https://picsum.photos/150/100" style="width: 100%;">
   <pre><code>code block</code></pre>
   <button style="padding: 5px 10px; background: #3498db; color: white; border: none; border-radius: 4px;">Click</button>
 </div>
 
 <div style="border: 2px solid #e74c3c; padding: 15px; border-radius: 8px;">
   <h4>Card 4</h4>
-  <img src="https://via.placeholder.com/150x100" style="width: 100%;">
+  <img src="https://picsum.photos/150/100" style="width: 100%;">
   <table>
     <tr><th>A</th><th>B</th></tr>
     <tr><td>1</td><td>2</td></tr>
@@ -800,7 +800,7 @@ Content at level 5 - Maximum depth!
 console.log("5 levels deep!");
 ```
 
-![Deep Image](https://via.placeholder.com/200x100)
+![Deep Image](https://picsum.photos/200/100)
 
 </details>
 
@@ -865,56 +865,56 @@ ThisIsAVeryLongWordWithNoSpacesThatKeepsGoingAndGoingAndGoingAndGoingAndGoingAnd
 ### 50 Images Grid
 
 <div style="display: grid; grid-template-columns: repeat(10, 1fr); gap: 5px;">
-<img src="https://via.placeholder.com/50x50" alt="1">
-<img src="https://via.placeholder.com/50x50" alt="2">
-<img src="https://via.placeholder.com/50x50" alt="3">
-<img src="https://via.placeholder.com/50x50" alt="4">
-<img src="https://via.placeholder.com/50x50" alt="5">
-<img src="https://via.placeholder.com/50x50" alt="6">
-<img src="https://via.placeholder.com/50x50" alt="7">
-<img src="https://via.placeholder.com/50x50" alt="8">
-<img src="https://via.placeholder.com/50x50" alt="9">
-<img src="https://via.placeholder.com/50x50" alt="10">
-<img src="https://via.placeholder.com/50x50" alt="11">
-<img src="https://via.placeholder.com/50x50" alt="12">
-<img src="https://via.placeholder.com/50x50" alt="13">
-<img src="https://via.placeholder.com/50x50" alt="14">
-<img src="https://via.placeholder.com/50x50" alt="15">
-<img src="https://via.placeholder.com/50x50" alt="16">
-<img src="https://via.placeholder.com/50x50" alt="17">
-<img src="https://via.placeholder.com/50x50" alt="18">
-<img src="https://via.placeholder.com/50x50" alt="19">
-<img src="https://via.placeholder.com/50x50" alt="20">
-<img src="https://via.placeholder.com/50x50" alt="21">
-<img src="https://via.placeholder.com/50x50" alt="22">
-<img src="https://via.placeholder.com/50x50" alt="23">
-<img src="https://via.placeholder.com/50x50" alt="24">
-<img src="https://via.placeholder.com/50x50" alt="25">
-<img src="https://via.placeholder.com/50x50" alt="26">
-<img src="https://via.placeholder.com/50x50" alt="27">
-<img src="https://via.placeholder.com/50x50" alt="28">
-<img src="https://via.placeholder.com/50x50" alt="29">
-<img src="https://via.placeholder.com/50x50" alt="30">
-<img src="https://via.placeholder.com/50x50" alt="31">
-<img src="https://via.placeholder.com/50x50" alt="32">
-<img src="https://via.placeholder.com/50x50" alt="33">
-<img src="https://via.placeholder.com/50x50" alt="34">
-<img src="https://via.placeholder.com/50x50" alt="35">
-<img src="https://via.placeholder.com/50x50" alt="36">
-<img src="https://via.placeholder.com/50x50" alt="37">
-<img src="https://via.placeholder.com/50x50" alt="38">
-<img src="https://via.placeholder.com/50x50" alt="39">
-<img src="https://via.placeholder.com/50x50" alt="40">
-<img src="https://via.placeholder.com/50x50" alt="41">
-<img src="https://via.placeholder.com/50x50" alt="42">
-<img src="https://via.placeholder.com/50x50" alt="43">
-<img src="https://via.placeholder.com/50x50" alt="44">
-<img src="https://via.placeholder.com/50x50" alt="45">
-<img src="https://via.placeholder.com/50x50" alt="46">
-<img src="https://via.placeholder.com/50x50" alt="47">
-<img src="https://via.placeholder.com/50x50" alt="48">
-<img src="https://via.placeholder.com/50x50" alt="49">
-<img src="https://via.placeholder.com/50x50" alt="50">
+<img src="https://picsum.photos/50/50" alt="1">
+<img src="https://picsum.photos/50/50" alt="2">
+<img src="https://picsum.photos/50/50" alt="3">
+<img src="https://picsum.photos/50/50" alt="4">
+<img src="https://picsum.photos/50/50" alt="5">
+<img src="https://picsum.photos/50/50" alt="6">
+<img src="https://picsum.photos/50/50" alt="7">
+<img src="https://picsum.photos/50/50" alt="8">
+<img src="https://picsum.photos/50/50" alt="9">
+<img src="https://picsum.photos/50/50" alt="10">
+<img src="https://picsum.photos/50/50" alt="11">
+<img src="https://picsum.photos/50/50" alt="12">
+<img src="https://picsum.photos/50/50" alt="13">
+<img src="https://picsum.photos/50/50" alt="14">
+<img src="https://picsum.photos/50/50" alt="15">
+<img src="https://picsum.photos/50/50" alt="16">
+<img src="https://picsum.photos/50/50" alt="17">
+<img src="https://picsum.photos/50/50" alt="18">
+<img src="https://picsum.photos/50/50" alt="19">
+<img src="https://picsum.photos/50/50" alt="20">
+<img src="https://picsum.photos/50/50" alt="21">
+<img src="https://picsum.photos/50/50" alt="22">
+<img src="https://picsum.photos/50/50" alt="23">
+<img src="https://picsum.photos/50/50" alt="24">
+<img src="https://picsum.photos/50/50" alt="25">
+<img src="https://picsum.photos/50/50" alt="26">
+<img src="https://picsum.photos/50/50" alt="27">
+<img src="https://picsum.photos/50/50" alt="28">
+<img src="https://picsum.photos/50/50" alt="29">
+<img src="https://picsum.photos/50/50" alt="30">
+<img src="https://picsum.photos/50/50" alt="31">
+<img src="https://picsum.photos/50/50" alt="32">
+<img src="https://picsum.photos/50/50" alt="33">
+<img src="https://picsum.photos/50/50" alt="34">
+<img src="https://picsum.photos/50/50" alt="35">
+<img src="https://picsum.photos/50/50" alt="36">
+<img src="https://picsum.photos/50/50" alt="37">
+<img src="https://picsum.photos/50/50" alt="38">
+<img src="https://picsum.photos/50/50" alt="39">
+<img src="https://picsum.photos/50/50" alt="40">
+<img src="https://picsum.photos/50/50" alt="41">
+<img src="https://picsum.photos/50/50" alt="42">
+<img src="https://picsum.photos/50/50" alt="43">
+<img src="https://picsum.photos/50/50" alt="44">
+<img src="https://picsum.photos/50/50" alt="45">
+<img src="https://picsum.photos/50/50" alt="46">
+<img src="https://picsum.photos/50/50" alt="47">
+<img src="https://picsum.photos/50/50" alt="48">
+<img src="https://picsum.photos/50/50" alt="49">
+<img src="https://picsum.photos/50/50" alt="50">
 </div>
 
 ---
@@ -934,7 +934,7 @@ ThisIsAVeryLongWordWithNoSpacesThatKeepsGoingAndGoingAndGoingAndGoingAndGoingAnd
 ***~~Everything formatted~~***
 
 - **List** with [link](/) and `code`
-  - ![Image](https://via.placeholder.com/100x75)
+  - ![Image](https://picsum.photos/100/75)
   - > Quote in list
     >> Nested quote
   - ```javascript
@@ -943,7 +943,7 @@ ThisIsAVeryLongWordWithNoSpacesThatKeepsGoingAndGoingAndGoingAndGoingAndGoingAnd
 
 | Table | With |
 |-------|------|
-| ![](https://via.placeholder.com/50x50) | `code` |
+| ![](https://picsum.photos/50/50) | `code` |
 | **bold** | [link](/) |
 
 </div>
@@ -966,7 +966,7 @@ ThisIsAVeryLongWordWithNoSpacesThatKeepsGoingAndGoingAndGoingAndGoingAndGoingAnd
 print("Hidden code")
 ```
 
-![Hidden Image](https://via.placeholder.com/150x100)
+![Hidden Image](https://picsum.photos/150/100)
 
 </details>
 
@@ -976,7 +976,7 @@ print("Hidden code")
 > - `Code`
 > - **Formatting**
 >
-> ![Quote Image](https://via.placeholder.com/150x100)
+> ![Quote Image](https://picsum.photos/150/100)
 
 </div>
 
