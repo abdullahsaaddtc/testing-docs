@@ -251,3 +251,12 @@ nav:
       - Unit Testing: docs/developers/testing/unit.md
       - Integration Testing: docs/developers/testing/integration.md
       - E2E Testing: docs/developers/testing/e2e.md
+
+  # ============================================================================
+  # VARIATION 13: Testing & Reference Documentation
+  # ============================================================================
+  - Testing & Reference:
+    - Markdown Cheat Sheet: docs/markdown-cheatsheet.md
+    - Real-World Examples: docs/markdown-real-world-examples.md
+    - Ultimate Complete: docs/markdown-ultimate-complete.md
+    - Extreme Stress Test: docs/markdown-extreme-stress-test.md
