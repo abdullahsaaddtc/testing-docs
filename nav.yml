@@ -1,22 +1,253 @@
 nav:
+  # ============================================================================
+  # VARIATION 1: Direct Top-Level Link (No nesting)
+  # ============================================================================
   - Home: docs/README.md
 
+  # ============================================================================
+  # VARIATION 2: Simple Section with Direct Children (1 level deep)
+  # ============================================================================
   - Getting Started:
     - Introduction: docs/getting-started/introduction.md
     - Installation: docs/getting-started/installation.md
     - Quick Start: docs/getting-started/quick-start.md
 
+  # ============================================================================
+  # VARIATION 3: Section with Nested Subsections (2 levels deep)
+  # ============================================================================
   - User Guide:
-    - Dashboard Overview: docs/user-guide/dashboard.md
+    - Overview: docs/user-guide/index.md
+    - Dashboard:
+      - Dashboard Overview: docs/user-guide/dashboard.md
+      - Dashboard Settings: docs/user-guide/dashboard-settings.md
+      - Custom Widgets: docs/user-guide/custom-widgets.md
     - AI Assistant: docs/user-guide/ai-assistant.md
     - Salesforce Integration: docs/user-guide/salesforce-integration.md
 
-  - API Reference:
-    - Authentication: docs/api-reference/authentication.md
-    - Endpoints: docs/api-reference/endpoints.md
-    - Webhooks: docs/api-reference/webhooks.md
+  # ============================================================================
+  # VARIATION 4: Deep Nesting (3+ levels deep)
+  # ============================================================================
+  - Integrations:
+    - Overview: docs/integrations/index.md
+    - Salesforce Clouds:
+      - Sales Cloud:
+        - Overview: docs/integrations/salesforce/sales-cloud/index.md
+        - Opportunities: docs/integrations/salesforce/sales-cloud/opportunities.md
+        - Leads: docs/integrations/salesforce/sales-cloud/leads.md
+        - Accounts: docs/integrations/salesforce/sales-cloud/accounts.md
+        - Advanced Features:
+          - Territory Management: docs/integrations/salesforce/sales-cloud/advanced/territory.md
+          - Price Books: docs/integrations/salesforce/sales-cloud/advanced/price-books.md
+      - Service Cloud:
+        - Overview: docs/integrations/salesforce/service-cloud/index.md
+        - Cases: docs/integrations/salesforce/service-cloud/cases.md
+        - Knowledge Base: docs/integrations/salesforce/service-cloud/knowledge.md
+      - Marketing Cloud:
+        - Overview: docs/integrations/salesforce/marketing-cloud/index.md
+        - Campaigns: docs/integrations/salesforce/marketing-cloud/campaigns.md
+    - Third-Party Apps:
+      - Slack: docs/integrations/third-party/slack.md
+      - Microsoft Teams: docs/integrations/third-party/teams.md
+      - Zapier: docs/integrations/third-party/zapier.md
 
+  # ============================================================================
+  # VARIATION 5: Mixed Structure (sections + direct links at same level)
+  # ============================================================================
+  - Tutorials:
+    - Overview: docs/tutorials/index.md
+    - Quick Tutorials: docs/tutorials/quick-start.md
+    - Video Courses:
+      - Beginner Course:
+        - Introduction: docs/tutorials/video/beginner/intro.md
+        - Lesson 1: docs/tutorials/video/beginner/lesson-1.md
+        - Lesson 2: docs/tutorials/video/beginner/lesson-2.md
+        - Lesson 3: docs/tutorials/video/beginner/lesson-3.md
+      - Advanced Course:
+        - Introduction: docs/tutorials/video/advanced/intro.md
+        - Lesson 1: docs/tutorials/video/advanced/lesson-1.md
+        - Lesson 2: docs/tutorials/video/advanced/lesson-2.md
+    - Text Tutorials:
+      - Your First Query: docs/tutorials/text/first-query.md
+      - Creating Automations: docs/tutorials/text/automations.md
+      - Advanced Filtering: docs/tutorials/text/filtering.md
+    - Interactive Labs: docs/tutorials/labs.md
+
+  # ============================================================================
+  # VARIATION 6: API Reference with Multiple Nested Categories
+  # ============================================================================
+  - API Reference:
+    - Overview: docs/api-reference/index.md
+    - Authentication:
+      - Overview: docs/api-reference/authentication.md
+      - OAuth 2.0: docs/api-reference/auth/oauth.md
+      - API Keys: docs/api-reference/auth/api-keys.md
+      - JWT Tokens: docs/api-reference/auth/jwt.md
+    - Endpoints:
+      - REST API:
+        - Overview: docs/api-reference/endpoints.md
+        - Users:
+          - List Users: docs/api-reference/rest/users/list.md
+          - Create User: docs/api-reference/rest/users/create.md
+          - Update User: docs/api-reference/rest/users/update.md
+          - Delete User: docs/api-reference/rest/users/delete.md
+        - Accounts:
+          - List Accounts: docs/api-reference/rest/accounts/list.md
+          - Create Account: docs/api-reference/rest/accounts/create.md
+        - Opportunities:
+          - List Opportunities: docs/api-reference/rest/opportunities/list.md
+          - Create Opportunity: docs/api-reference/rest/opportunities/create.md
+      - GraphQL API:
+        - Overview: docs/api-reference/graphql/index.md
+        - Queries: docs/api-reference/graphql/queries.md
+        - Mutations: docs/api-reference/graphql/mutations.md
+        - Subscriptions: docs/api-reference/graphql/subscriptions.md
+    - Webhooks:
+      - Overview: docs/api-reference/webhooks.md
+      - Event Types: docs/api-reference/webhooks/events.md
+      - Security: docs/api-reference/webhooks/security.md
+    - SDKs:
+      - JavaScript: docs/api-reference/sdks/javascript.md
+      - Python: docs/api-reference/sdks/python.md
+      - Ruby: docs/api-reference/sdks/ruby.md
+      - Java: docs/api-reference/sdks/java.md
+
+  # ============================================================================
+  # VARIATION 7: Use Cases with Real-World Examples (nested scenarios)
+  # ============================================================================
+  - Use Cases:
+    - Overview: docs/use-cases/index.md
+    - By Department:
+      - Sales Teams:
+        - Overview: docs/use-cases/sales/index.md
+        - Lead Management: docs/use-cases/sales/leads.md
+        - Pipeline Automation: docs/use-cases/sales/pipeline.md
+        - Reporting: docs/use-cases/sales/reporting.md
+      - Service Teams:
+        - Overview: docs/use-cases/service/index.md
+        - Case Management: docs/use-cases/service/cases.md
+        - Knowledge Base: docs/use-cases/service/knowledge.md
+      - Marketing Teams:
+        - Overview: docs/use-cases/marketing/index.md
+        - Campaign Management: docs/use-cases/marketing/campaigns.md
+        - Lead Scoring: docs/use-cases/marketing/scoring.md
+      - Executives:
+        - Overview: docs/use-cases/executives/index.md
+        - Dashboards: docs/use-cases/executives/dashboards.md
+        - Forecasting: docs/use-cases/executives/forecasting.md
+    - By Industry:
+      - Healthcare: docs/use-cases/industry/healthcare.md
+      - Finance: docs/use-cases/industry/finance.md
+      - Retail: docs/use-cases/industry/retail.md
+      - Technology: docs/use-cases/industry/technology.md
+
+  # ============================================================================
+  # VARIATION 8: Advanced Section with Complex Nested Topics
+  # ============================================================================
   - Advanced:
-    - Custom Workflows: docs/advanced/custom-workflows.md
-    - Security: docs/advanced/security.md
+    - Overview: docs/advanced/index.md
+    - Workflows:
+      - Custom Workflows: docs/advanced/custom-workflows.md
+      - Workflow Templates:
+        - Sales Templates:
+          - Lead Nurturing: docs/advanced/workflows/sales/lead-nurturing.md
+          - Opportunity Management: docs/advanced/workflows/sales/opportunities.md
+        - Service Templates:
+          - Case Routing: docs/advanced/workflows/service/case-routing.md
+          - Escalation: docs/advanced/workflows/service/escalation.md
+      - Workflow Triggers:
+        - Time-Based: docs/advanced/workflows/triggers/time-based.md
+        - Event-Based: docs/advanced/workflows/triggers/event-based.md
+        - Conditional: docs/advanced/workflows/triggers/conditional.md
+    - Security:
+      - Overview: docs/advanced/security.md
+      - Authentication:
+        - SSO Integration: docs/advanced/security/sso.md
+        - Two-Factor Auth: docs/advanced/security/2fa.md
+        - IP Whitelisting: docs/advanced/security/ip-whitelist.md
+      - Data Protection:
+        - Encryption: docs/advanced/security/encryption.md
+        - Data Retention: docs/advanced/security/retention.md
+        - Compliance: docs/advanced/security/compliance.md
+    - Performance:
+      - Optimization: docs/advanced/performance/optimization.md
+      - Caching: docs/advanced/performance/caching.md
+      - Rate Limiting: docs/advanced/performance/rate-limits.md
     - Troubleshooting: docs/advanced/troubleshooting.md
+
+  # ============================================================================
+  # VARIATION 9: Resources with Mixed Depth
+  # ============================================================================
+  - Resources:
+    - Glossary: docs/resources/glossary.md
+    - FAQ: docs/resources/faq.md
+    - Release Notes:
+      - Latest: docs/resources/releases/latest.md
+      - Version 1.0: docs/resources/releases/v1.0.md
+      - Version 0.9: docs/resources/releases/v0.9.md
+      - Archive:
+        - 2025: docs/resources/releases/archive/2025.md
+        - 2024: docs/resources/releases/archive/2024.md
+    - Video Library:
+      - Getting Started Videos: docs/resources/videos/getting-started.md
+      - Feature Demos: docs/resources/videos/demos.md
+      - Webinar Recordings: docs/resources/videos/webinars.md
+    - Community:
+      - Forum: docs/resources/community/forum.md
+      - Discord: docs/resources/community/discord.md
+      - GitHub: docs/resources/community/github.md
+    - Support: docs/resources/support.md
+    - Legal:
+      - Terms of Service: docs/resources/legal/terms.md
+      - Privacy Policy: docs/resources/legal/privacy.md
+      - SLA: docs/resources/legal/sla.md
+
+  # ============================================================================
+  # VARIATION 10: Edge Case - Section with Only One Item
+  # ============================================================================
+  - Changelog:
+    - All Changes: docs/changelog.md
+
+  # ============================================================================
+  # VARIATION 11: Edge Case - Very Deep Nesting (4-5 levels)
+  # ============================================================================
+  - Enterprise Features:
+    - Overview: docs/enterprise/index.md
+    - Administration:
+      - User Management:
+        - Roles & Permissions:
+          - Role Types:
+            - Admin Roles: docs/enterprise/admin/roles/types/admin.md
+            - User Roles: docs/enterprise/admin/roles/types/user.md
+            - Custom Roles: docs/enterprise/admin/roles/types/custom.md
+          - Permission Sets:
+            - System Permissions: docs/enterprise/admin/roles/permissions/system.md
+            - Data Permissions: docs/enterprise/admin/roles/permissions/data.md
+            - API Permissions: docs/enterprise/admin/roles/permissions/api.md
+        - User Provisioning:
+          - SCIM Integration: docs/enterprise/admin/provisioning/scim.md
+          - Active Directory: docs/enterprise/admin/provisioning/ad.md
+        - Audit Logs: docs/enterprise/admin/audit-logs.md
+      - Organization Settings:
+        - Branding: docs/enterprise/org/branding.md
+        - Domain Configuration: docs/enterprise/org/domains.md
+    - Compliance:
+      - SOC 2: docs/enterprise/compliance/soc2.md
+      - GDPR: docs/enterprise/compliance/gdpr.md
+      - HIPAA: docs/enterprise/compliance/hipaa.md
+
+  # ============================================================================
+  # VARIATION 12: Edge Case - Parallel Sections at Same Level
+  # ============================================================================
+  - Developer Tools:
+    - CLI:
+      - Installation: docs/developers/cli/install.md
+      - Commands: docs/developers/cli/commands.md
+      - Configuration: docs/developers/cli/config.md
+    - IDE Extensions:
+      - VS Code: docs/developers/ide/vscode.md
+      - IntelliJ: docs/developers/ide/intellij.md
+      - Sublime: docs/developers/ide/sublime.md
+    - Testing Tools:
+      - Unit Testing: docs/developers/testing/unit.md
+      - Integration Testing: docs/developers/testing/integration.md
+      - E2E Testing: docs/developers/testing/e2e.md
