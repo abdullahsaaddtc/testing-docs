@@ -1,6 +1,7 @@
 nav:
+  - Home: docs/README.md
+
   - Getting Started:
-    - Welcome: docs/README.md
     - Introduction: docs/getting-started/introduction.md
     - Installation: docs/getting-started/installation.md
     - Quick Start: docs/getting-started/quick-start.md
