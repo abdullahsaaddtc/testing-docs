@@ -42,7 +42,7 @@ curl https://api.scopien.com/v1/opportunities \
 4. Click **"Generate"**
 5. Copy and save the key securely
 
-⚠️ **Important**: Keys are only shown once. Store them securely!
+Important: **Important**: Keys are only shown once. Store them securely!
 
 ### Via API
 
@@ -148,14 +148,14 @@ curl -X POST https://api.scopien.com/v1/accounts \
 
 ## Security Best Practices
 
-### ✅ Do's
+###  Do's
 
 **Key Storage**
 ```javascript
-// ✅ Use environment variables
+//  Use environment variables
 const API_KEY = process.env.SCOPIEN_API_KEY;
 
-// ❌ Never hardcode keys
+//  Never hardcode keys
 const API_KEY = 'sk_live_abc123...';  // NEVER DO THIS!
 ```
 
@@ -171,25 +171,25 @@ const API_KEY = 'sk_live_abc123...';  // NEVER DO THIS!
 - Set appropriate rate limits
 - Enable key expiration
 
-### ❌ Don'ts
+###  Don'ts
 
 **Never expose keys:**
 ```javascript
-// ❌ Don't commit to version control
+//  Don't commit to version control
 // .env
 API_KEY=sk_live_abc123...
 
-// ✅ Add to .gitignore
+//  Add to .gitignore
 # .gitignore
 .env
 .env.local
 ```
 
 **Don't share keys:**
-- ❌ Via email
-- ❌ In chat messages
-- ❌ In screenshots
-- ❌ In public repositories
+-  Via email
+-  In chat messages
+-  In screenshots
+-  In public repositories
 
 ## Rate Limiting
 

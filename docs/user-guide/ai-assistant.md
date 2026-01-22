@@ -11,7 +11,7 @@ The Scopien AI Assistant is your intelligent companion for all Salesforce tasks.
 
 ### Quick Access
 - **Keyboard**: `Ctrl/Cmd + K`
-- **Button**: Click 💬 AI Assistant in sidebar
+- **Button**: Click  AI Assistant in sidebar
 - **Voice**: Say "Hey Scopien" (if voice enabled)
 - **Mobile**: Tap microphone icon
 
@@ -19,10 +19,10 @@ The Scopien AI Assistant is your intelligent companion for all Salesforce tasks.
 
 ```
 ┌──────────────────────────────────────────┐
-│  💬 AI Assistant                    ⚙️ │
+│   AI Assistant                    Settings │
 ├──────────────────────────────────────────┤
 │                                          │
-│  🤖 How can I help you today?           │
+│   How can I help you today?           │
 │                                          │
 │  Suggested actions:                      │
 │  • Show my pipeline                      │
@@ -30,7 +30,7 @@ The Scopien AI Assistant is your intelligent companion for all Salesforce tasks.
 │  • Find overdue tasks                    │
 │                                          │
 ├──────────────────────────────────────────┤
-│  Type your message here...          🎤  │
+│  Type your message here...            │
 └──────────────────────────────────────────┘
 ```
 
@@ -185,8 +185,8 @@ AI: [Displays email, calls, meetings]
     Would you like me to create a meeting summary?
 
 You: Yes, and add a follow-up task
-AI: ✅ Meeting summary created
-    ✅ Follow-up task added for next Tuesday
+AI: Meeting summary created
+    Follow-up task added for next Tuesday
 ```
 
 ### Error Handling
@@ -255,9 +255,9 @@ You: For each lead from yesterday's webinar:
      - Send welcome email
 
 AI: Processing 45 leads...
-    ✅ 45 leads updated
-    ✅ 45 assignments made
-    ✅ 45 emails sent
+    45 leads updated
+    45 assignments made
+    45 emails sent
 ```
 
 ### Conditional Logic
@@ -279,7 +279,7 @@ Automate recurring tasks:
 You: Every Monday at 9 AM, send me a pipeline report
      with opportunities closing this month
 
-AI: ✅ Schedule created
+AI: Schedule created
     Next run: Monday, Jan 27 at 9:00 AM
 ```
 
@@ -309,7 +309,7 @@ Bookmark frequent queries:
 
 ```
 You: Save this as "Weekly Review"
-AI: ✅ Saved as "Weekly Review"
+AI: Saved as "Weekly Review"
     Access with: /weekly-review
 ```
 
@@ -327,7 +327,7 @@ Share AI sessions with teammates:
 
 ```
 You: Share this conversation with Sarah
-AI: ✅ Shared with sarah@company.com
+AI: Shared with sarah@company.com
     She can view and continue this conversation
 ```
 
@@ -351,54 +351,54 @@ Involve team members:
 
 ```
 You: @Sarah can you follow up on the Acme Corp deal?
-AI: ✅ Notification sent to Sarah
+AI: Notification sent to Sarah
     Task created: "Follow up on Acme Corp deal"
 ```
 
 ## Best Practices
 
-### ✅ Do's
+### Do's
 
 **Be Specific**
 ```
-❌ "Show me leads"
-✅ "Show me uncontacted leads from last week worth over $10k"
+Bad: "Show me leads"
+Good: "Show me uncontacted leads from last week worth over $10k"
 ```
 
 **Use Filters**
 ```
-❌ "Show all opportunities" (could be thousands)
-✅ "Show opportunities closing this quarter in tech industry"
+Bad: "Show all opportunities" (could be thousands)
+Good: "Show opportunities closing this quarter in tech industry"
 ```
 
 **Break Down Complex Tasks**
 ```
-❌ "Do everything for new lead John at Apple interested
+Bad: "Do everything for new lead John at Apple interested
      in enterprise plan with $100k budget meeting next week"
-✅ "Create lead for John at Apple"
-    "Set product interest to Enterprise"
-    "Add budget $100k"
-    "Schedule follow-up meeting next week"
+Good: "Create lead for John at Apple"
+      "Set product interest to Enterprise"
+      "Add budget $100k"
+      "Schedule follow-up meeting next week"
 ```
 
-### ❌ Don'ts
+### Don'ts
 
 **Avoid Ambiguity**
 ```
-❌ "Show me the data"
-✅ "Show me opportunity data for Q1"
+Bad: "Show me the data"
+Good: "Show me opportunity data for Q1"
 ```
 
 **Don't Skip Context**
 ```
-❌ "Update it to qualified"
-✅ "Update lead John Smith to qualified"
+Bad: "Update it to qualified"
+Good: "Update lead John Smith to qualified"
 ```
 
 **Don't Ignore Confirmations**
 ```
-❌ Requesting deletion without review
-✅ Review what will be deleted, then confirm
+Bad: Requesting deletion without review
+Good: Review what will be deleted, then confirm
 ```
 
 ## Troubleshooting
@@ -437,15 +437,15 @@ AI: ✅ Notification sent to Sarah
 
 ## Pro Tips
 
-### 💡 Tip 1: Natural Language
+### Tip 1: Natural Language
 
 Talk to the AI naturally:
 ```
-✅ "Hey, can you show me which opportunities are at risk?"
-✅ "I need to find all the leads we got from the website"
+"Hey, can you show me which opportunities are at risk?"
+"I need to find all the leads we got from the website"
 ```
 
-### 💡 Tip 2: Ask for Help
+### Tip 2: Ask for Help
 
 ```
 You: How do I create a report?
@@ -458,7 +458,7 @@ AI: I can help! Here's how to create a report:
     by stage for this quarter"
 ```
 
-### 💡 Tip 3: Iterate
+### Tip 3: Iterate
 
 Refine results through conversation:
 ```

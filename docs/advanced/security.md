@@ -76,12 +76,12 @@ Infrastructure      → SOC 2, HIPAA, ISO 27001
 ```
 Minimum length: 12 characters
 Requirements:
-  ✅ Uppercase letters
-  ✅ Lowercase letters
-  ✅ Numbers
-  ✅ Special characters
-  ✅ No common patterns
-  ✅ No personal information
+   Uppercase letters
+   Lowercase letters
+   Numbers
+   Special characters
+   No common patterns
+   No personal information
 
 Password rotation: 90 days
 Password history: Last 12 passwords
@@ -94,20 +94,20 @@ Password history: Last 12 passwords
 **Best Practices:**
 
 ```javascript
-// ✅ Use environment variables
+//  Use environment variables
 const API_KEY = process.env.SCOPIEN_API_KEY;
 
-// ✅ Rotate keys regularly
+//  Rotate keys regularly
 const KEY_ROTATION_DAYS = 90;
 
-// ✅ Use different keys per environment
+//  Use different keys per environment
 const PROD_KEY = process.env.SCOPIEN_PROD_KEY;
 const DEV_KEY = process.env.SCOPIEN_DEV_KEY;
 
-// ❌ Never hardcode keys
+//  Never hardcode keys
 const API_KEY = 'sk_live_abc123...';  // NEVER!
 
-// ❌ Never commit keys to git
+//  Never commit keys to git
 // Always add to .gitignore
 ```
 

@@ -196,11 +196,11 @@ Subscribe to all events of a type:
 ### Endpoint Requirements
 
 Your webhook endpoint must:
-- ✅ Accept `POST` requests
-- ✅ Use HTTPS (required in production)
-- ✅ Return `200 OK` within 5 seconds
-- ✅ Verify webhook signature
-- ✅ Handle idempotency
+-  Accept `POST` requests
+-  Use HTTPS (required in production)
+-  Return `200 OK` within 5 seconds
+-  Verify webhook signature
+-  Handle idempotency
 
 ### Implementation Examples
 
@@ -375,11 +375,11 @@ function verifyWebhook(payload, signature, secret) {
 
 ## Best Practices
 
-### ✅ Do's
+###  Do's
 
 **Respond Quickly**
 ```javascript
-// ✅ Process asynchronously
+//  Process asynchronously
 app.post('/webhook', async (req, res) => {
   // Return 200 immediately
   res.status(200).send('OK');
@@ -391,7 +391,7 @@ app.post('/webhook', async (req, res) => {
 
 **Handle Duplicates**
 ```javascript
-// ✅ Track processed event IDs
+//  Track processed event IDs
 const processedEvents = new Set();
 
 if (processedEvents.has(event.id)) {
@@ -404,7 +404,7 @@ processedEvents.add(event.id);
 
 **Implement Retries**
 ```javascript
-// ✅ Graceful error handling
+//  Graceful error handling
 try {
   await processEvent(event);
 } catch (error) {
@@ -418,11 +418,11 @@ try {
 }
 ```
 
-### ❌ Don'ts
+### Error Don'ts
 
 **Don't Process Synchronously**
 ```javascript
-// ❌ Slow processing
+// Error Slow processing
 app.post('/webhook', async (req, res) => {
   await heavyProcessing(req.body);  // Too slow!
   res.status(200).send('OK');
@@ -431,7 +431,7 @@ app.post('/webhook', async (req, res) => {
 
 **Don't Skip Verification**
 ```javascript
-// ❌ Accepting all requests
+// Error Accepting all requests
 app.post('/webhook', (req, res) => {
   // No signature verification - UNSAFE!
   processEvent(req.body);
@@ -487,15 +487,15 @@ View webhook delivery history:
 ```
 Recent Deliveries
 ─────────────────────────────────────────
-✅ 10:45 AM - opportunity.updated
+ 10:45 AM - opportunity.updated
    Status: 200 OK
    Duration: 234ms
 
-✅ 10:30 AM - lead.created
+ 10:30 AM - lead.created
    Status: 200 OK
    Duration: 156ms
 
-❌ 10:15 AM - case.updated
+Error 10:15 AM - case.updated
    Status: 500 Error
    Retried: 3 times
    Next retry: 10:20 AM
@@ -660,8 +660,8 @@ Restrict webhooks to Scopien IPs:
 Production webhooks must use HTTPS:
 
 ```
-✅ https://your-app.com/webhook
-❌ http://your-app.com/webhook
+ https://your-app.com/webhook
+Error http://your-app.com/webhook
 ```
 
 ### Rate Limiting

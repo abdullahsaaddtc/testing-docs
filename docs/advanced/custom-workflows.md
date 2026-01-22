@@ -39,14 +39,14 @@ When opportunity stage changes to "Closed Won"
 │  Workflow Builder                       │
 ├─────────────────────────────────────────┤
 │                                         │
-│  📍 Trigger: Opportunity Updated        │
+│   Trigger: Opportunity Updated        │
 │      └─ When: Stage changes             │
 │                                         │
-│  ✨ Conditions                          │
+│   Conditions                          │
 │      └─ Amount > $50,000                │
 │      └─ Industry = "Technology"         │
 │                                         │
-│  ⚡ Actions                             │
+│   Actions                             │
 │      1. Send notification               │
 │      2. Create task                     │
 │      3. Update field                    │
@@ -237,7 +237,7 @@ Operations to perform:
       type: "webhook",
       url: "https://slack.com/api/chat.postMessage",
       payload: {
-        text: "🎉 {{opportunity.owner.name}} closed {{opportunity.name}} for ${{opportunity.amount}}"
+        text: " {{opportunity.owner.name}} closed {{opportunity.name}} for ${{opportunity.amount}}"
       }
     }
   ]
@@ -468,14 +468,14 @@ Test workflows without affecting data:
 
 **Test Results:**
 ```
-✅ Workflow Test Results
+ Workflow Test Results
 ──────────────────────────
 Trigger: Matched
 Conditions: Passed
 Actions:
-  1. ✅ Email sent (test mode)
-  2. ✅ Task created (test mode)
-  3. ✅ Record updated (test mode)
+  1.  Email sent (test mode)
+  2.  Task created (test mode)
+  3.  Record updated (test mode)
 
 Execution time: 234ms
 ```
@@ -501,18 +501,18 @@ Workflow Execution Log
 
 ## Best Practices
 
-### ✅ Do's
+###  Do's
 
 **Keep It Simple**
 ```
-✅ One workflow per business process
-✅ Clear naming conventions
-✅ Document workflow purpose
+ One workflow per business process
+ Clear naming conventions
+ Document workflow purpose
 ```
 
 **Error Handling**
 ```javascript
-// ✅ Handle errors gracefully
+//  Handle errors gracefully
 {
   type: "send_email",
   retries: 3,
@@ -526,27 +526,27 @@ Workflow Execution Log
 
 **Performance**
 ```
-✅ Use bulk actions for multiple records
-✅ Limit queries in loops
-✅ Set reasonable delays
-✅ Monitor execution times
+ Use bulk actions for multiple records
+ Limit queries in loops
+ Set reasonable delays
+ Monitor execution times
 ```
 
-### ❌ Don'ts
+###  Don'ts
 
 **Avoid Complexity**
 ```
-❌ Too many nested conditions
-❌ Infinite loops
-❌ Excessive API calls
-❌ Circular workflow triggers
+ Too many nested conditions
+ Infinite loops
+ Excessive API calls
+ Circular workflow triggers
 ```
 
 **Don't Over-Automate**
 ```
-❌ Automating one-time tasks
-❌ Complex manual processes
-❌ Processes requiring human judgment
+ Automating one-time tasks
+ Complex manual processes
+ Processes requiring human judgment
 ```
 
 ## Monitoring
@@ -556,10 +556,10 @@ Workflow Execution Log
 ```
 Active Workflows: 23
 ──────────────────────────────────────
-Lead Nurture         ✅ 145 runs/day
-Deal Won Process     ✅ 12 runs/day
-Case Escalation      ✅ 48 runs/day
-High-Value Alert     ⚠️ 3 errors today
+Lead Nurture          145 runs/day
+Deal Won Process      12 runs/day
+Case Escalation       48 runs/day
+High-Value Alert     Warning 3 errors today
 ```
 
 ### Execution History
@@ -568,13 +568,13 @@ High-Value Alert     ⚠️ 3 errors today
 Recent Executions
 ──────────────────────────────────────
 10:45 AM - Lead Nurture
-           ✅ Success (234ms)
+            Success (234ms)
 
 10:30 AM - Deal Won Process
-           ✅ Success (1.2s)
+            Success (1.2s)
 
 10:15 AM - High-Value Alert
-           ❌ Failed: Email delivery error
+            Failed: Email delivery error
            Retry: In progress
 ```
 
@@ -613,11 +613,11 @@ Actions Performed:   12,702
 
 **Optimizations:**
 ```
-✅ Use bulk operations
-✅ Reduce API calls
-✅ Optimize queries
-✅ Add appropriate delays
-✅ Use async where possible
+ Use bulk operations
+ Reduce API calls
+ Optimize queries
+ Add appropriate delays
+ Use async where possible
 ```
 
 ## Integration Examples

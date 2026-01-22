@@ -97,11 +97,11 @@ console.log('Scopes:', keyInfo.scopes);
 ```
 1. Check sync status
    Settings → Integrations → Salesforce
-   Status should show: "Active" ✅
+   Status should show: "Active" OK
 
 2. Verify last sync time
-   Last Sync: < 1 hour ago ✅
-   Last Sync: > 1 hour ago ⚠️
+   Last Sync: < 1 hour ago OK
+   Last Sync: > 1 hour ago Warning
 
 3. Check sync logs
    Settings → Logs → Sync Logs
@@ -196,30 +196,30 @@ console.log('WebSocket status:', wsConnection.readyState);
 
 **Be Specific:**
 ```
-❌ "Show me data"
-✅ "Show me opportunities closing this month"
+No "Show me data"
+OK "Show me opportunities closing this month"
 
-❌ "Find the thing"
-✅ "Find accounts in California with revenue over $1M"
+No "Find the thing"
+OK "Find accounts in California with revenue over $1M"
 ```
 
 **Use Salesforce Terms:**
 ```
-❌ "Show me deals"
-✅ "Show me opportunities"
+No "Show me deals"
+OK "Show me opportunities"
 
-❌ "Find companies"
-✅ "Find accounts"
+No "Find companies"
+OK "Find accounts"
 ```
 
 **Break Down Complex Queries:**
 ```
-❌ "Show me everything about accounts with opportunities
+No "Show me everything about accounts with opportunities
      closing this month over $50k in tech industry"
 
-✅ Step 1: "Show me opportunities closing this month over $50k"
-✅ Step 2: "Filter for tech industry"
-✅ Step 3: "Show account details"
+OK Step 1: "Show me opportunities closing this month over $50k"
+OK Step 2: "Filter for tech industry"
+OK Step 3: "Show account details"
 ```
 
 #### Slow AI Responses
@@ -229,16 +229,16 @@ console.log('WebSocket status:', wsConnection.readyState);
 **Optimizations:**
 ```
 1. Reduce result set
-   ✅ "Show me top 10 opportunities"
-   ❌ "Show me all opportunities"
+   OK "Show me top 10 opportunities"
+   No "Show me all opportunities"
 
 2. Add date filters
-   ✅ "Show opportunities from last month"
-   ❌ "Show all opportunities ever"
+   OK "Show opportunities from last month"
+   No "Show all opportunities ever"
 
 3. Use specific filters
-   ✅ "Show opportunities owned by me"
-   ❌ "Show all opportunities for everyone"
+   OK "Show opportunities owned by me"
+   No "Show all opportunities for everyone"
 ```
 
 ### Performance Issues
@@ -252,7 +252,7 @@ console.log('WebSocket status:', wsConnection.readyState);
 **Reduce Widgets:**
 ```
 Optimal: 4-6 widgets
-Current: 12 widgets ⚠️
+Current: 12 widgets Warning
 
 Remove unused widgets:
 Settings → Customize Dashboard → Remove
@@ -260,15 +260,15 @@ Settings → Customize Dashboard → Remove
 
 **Optimize Date Ranges:**
 ```
-❌ All time (slow)
-✅ Last 90 days (fast)
-✅ This quarter (fast)
+No All time (slow)
+OK Last 90 days (fast)
+OK This quarter (fast)
 ```
 
 **Enable Caching:**
 ```
 Settings → Performance → Cache Settings
-Cache Duration: 15 minutes ✅
+Cache Duration: 15 minutes OK
 ```
 
 #### API Rate Limits
@@ -320,20 +320,20 @@ async function retryWithBackoff(fn, maxRetries = 3) {
 
 ```
 1. Check record in Salesforce
-   ✅ Exists
-   ❌ Deleted → Cannot sync
+   OK Exists
+   No Deleted → Cannot sync
 
 2. Check sync settings
    Settings → Integrations → Salesforce → Objects
-   ✅ Object type is enabled
+   OK Object type is enabled
 
 3. Check permissions
-   ✅ User has read access
-   ❌ No access → Grant permissions
+   OK User has read access
+   No No access → Grant permissions
 
 4. Check filters
    Settings → Data Filters
-   ❌ Filter excluding records → Adjust filter
+   No Filter excluding records → Adjust filter
 
 5. Force sync
    Settings → Integrations → Sync Now
@@ -355,7 +355,7 @@ async function retryWithBackoff(fn, maxRetries = 3) {
 
 2. Enable deduplication
    Settings → Data Quality → Deduplication
-   ✅ Enable automatic deduplication
+   OK Enable automatic deduplication
    Rule: Match on Email + Company
 
 3. Fix in Salesforce
@@ -371,8 +371,8 @@ async function retryWithBackoff(fn, maxRetries = 3) {
 **Debug Checklist:**
 ```
 1. Verify workflow is active
-   ✅ Status: Active
-   ❌ Status: Inactive → Activate
+   OK Status: Active
+   No Status: Inactive → Activate
 
 2. Check trigger conditions
    Test with sample data
@@ -394,8 +394,8 @@ async function retryWithBackoff(fn, maxRetries = 3) {
 ```
 Workflow Execution Debug
 ────────────────────────────────
-✅ Trigger: opportunity.updated
-❌ Condition Failed: amount > 50000
+OK Trigger: opportunity.updated
+No Condition Failed: amount > 50000
    Actual amount: 25000
    Expected: > 50000
 

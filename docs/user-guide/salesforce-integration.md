@@ -29,7 +29,7 @@ You'll be redirected to Salesforce login:
 │                                    │
 │  [ Log In ]                        │
 │                                    │
-│  ⚠️  Scopien AI is requesting      │
+│  Note:  Scopien AI is requesting      │
 │  access to your Salesforce data    │
 └────────────────────────────────────┘
 ```
@@ -46,14 +46,14 @@ Scopien AI requests these permissions:
 | Chatter Access | Post updates and notifications |
 | Reporting | Generate custom reports |
 
-✅ **Safe**: All permissions use OAuth 2.0 secure authentication
+ **Safe**: All permissions use OAuth 2.0 secure authentication
 
 ### Verification
 
 After authorization, verify the connection:
 
 ```
-✅ Connected to Salesforce
+ Connected to Salesforce
    Org: Acme Corporation
    Edition: Enterprise
    User: john.doe@acme.com
@@ -83,7 +83,7 @@ Choose which Salesforce objects to sync:
 - [x] Invoice__c
 - [ ] CustomObject__c
 
-💡 **Tip**: Only sync objects you actively use to improve performance
+Tip: **Tip**: Only sync objects you actively use to improve performance
 
 ### Field Mapping
 
@@ -120,8 +120,8 @@ Configure how data syncs:
 
 **Direction**
 ```
-☑ Salesforce → Scopien (two-way sync)
-☑ Scopien → Salesforce
+[x] Salesforce → Scopien (two-way sync)
+[x] Scopien → Salesforce
 ```
 
 **Conflict Resolution**
@@ -142,11 +142,11 @@ First sync imports all historical data:
 Syncing Salesforce Data
 ━━━━━━━━━━━━━━━━━━ 78% (45,231 / 58,000 records)
 
-Accounts:      ✅ 3,456
-Contacts:      ✅ 12,345
-Opportunities: ✅ 8,234
-Cases:         ⏳ 15,678
-Leads:         ⏳ 18,287
+Accounts:       3,456
+Contacts:       12,345
+Opportunities:  8,234
+Cases:         ... 15,678
+Leads:         ... 18,287
 
 Estimated time: 3 minutes
 ```
@@ -186,12 +186,12 @@ Connect multiple Salesforce orgs:
 ```
 Connected Organizations
 ───────────────────────────────────────
-🏢 Production Org
+ Production Org
    • acme.my.salesforce.com
    • Status: Active
    • Last sync: 2 min ago
 
-🧪 Sandbox Org
+ Sandbox Org
    • acme--sandbox.my.salesforce.com
    • Status: Active
    • Last sync: 5 min ago
@@ -294,11 +294,11 @@ All data is encrypted:
 ### Compliance
 
 Scopien AI is compliant with:
-- ✅ SOC 2 Type II
-- ✅ GDPR
-- ✅ CCPA
-- ✅ HIPAA (Enterprise plan)
-- ✅ ISO 27001
+-  SOC 2 Type II
+-  GDPR
+-  CCPA
+-  HIPAA (Enterprise plan)
+-  ISO 27001
 
 ### Access Control
 
@@ -315,10 +315,10 @@ Guest:    Read-only limited data
 **Field-Level Security**
 ```
 Hide sensitive fields:
-☑ Social Security Number
-☑ Bank Account Details
-☑ Salary Information
-☐ Email Address
+[x] Social Security Number
+[x] Bank Account Details
+[x] Salary Information
+[ ] Email Address
 ```
 
 ## Monitoring
@@ -328,7 +328,7 @@ Hide sensitive fields:
 Monitor sync health:
 
 ```
-Sync Health: ✅ Excellent
+Sync Health:  Excellent
 ──────────────────────────────
 Success Rate:    99.8%
 Avg Sync Time:   45 seconds
@@ -336,7 +336,7 @@ Records/Hour:    12,500
 Errors (24h):    2
 Last Error:      Rate limit exceeded (resolved)
 
-📊 View Detailed Logs
+ View Detailed Logs
 ```
 
 ### API Usage
@@ -351,7 +351,7 @@ Used Today:      12,456 (12%)
 Peak Hour:       9 AM - 2,456 calls
 Remaining:       87,544
 
-📈 View Usage Trends
+ View Usage Trends
 ```
 
 ### Error Monitoring
@@ -361,15 +361,15 @@ View and resolve errors:
 ```
 Recent Sync Errors
 ──────────────────────────────
-⚠️ 10:15 AM - Rate limit exceeded
+Note: 10:15 AM - Rate limit exceeded
    Action: Waiting 15 minutes
    Status: Resolved
 
-❌ 09:32 AM - Invalid field: Custom__c
+Do not: 09:32 AM - Invalid field: Custom__c
    Action: Field mapping updated
    Status: Resolved
 
-⚠️ 08:45 AM - Record locked
+Note: 08:45 AM - Record locked
    Action: Retry in progress
    Status: Retrying
 ```
@@ -425,7 +425,7 @@ Recent Sync Errors
 
 ## Best Practices
 
-### ✅ Do's
+###  Do's
 
 **Regular Monitoring**
 - Check sync status daily
@@ -445,19 +445,19 @@ Recent Sync Errors
 - Schedule large syncs off-peak
 - Archive old data
 
-### ❌ Don'ts
+### Do not: Don'ts
 
 **Security**
-- ❌ Share API credentials
-- ❌ Disable security features
-- ❌ Ignore security alerts
-- ❌ Use admin access for apps
+- Do not: Share API credentials
+- Do not: Disable security features
+- Do not: Ignore security alerts
+- Do not: Use admin access for apps
 
 **Performance**
-- ❌ Sync all objects
-- ❌ Use real-time sync unnecessarily
-- ❌ Ignore API limits
-- ❌ Keep unlimited history
+- Do not: Sync all objects
+- Do not: Use real-time sync unnecessarily
+- Do not: Ignore API limits
+- Do not: Keep unlimited history
 
 ## Migration
 
@@ -494,10 +494,10 @@ Run both systems during transition:
 ### Salesforce Partner
 
 Scopien AI is a Salesforce ISV Partner:
-- ✅ Certified on AppExchange
-- ✅ Security reviewed
-- ✅ Regular compliance audits
-- ✅ Direct Salesforce support channel
+-  Certified on AppExchange
+-  Security reviewed
+-  Regular compliance audits
+-  Direct Salesforce support channel
 
 ## Next Steps
 
