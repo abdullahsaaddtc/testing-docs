@@ -1,46 +1,174 @@
 nav:
   # ============================================================================
-  # VARIATION 1: Direct Top-Level Link (No nesting)
+  # TOP-LEVEL LINKS (Optional - can be removed if not needed)
   # ============================================================================
-  - Home: docs/README.md
+  - type: link
+    title: Home
+    path: docs/README.md
+    icon: mdi:home
 
   # ============================================================================
-  # VARIATION 2: Simple Section with Direct Children (1 level deep)
+  # SECTION: GET STARTED
   # ============================================================================
-  - Getting Started:
-    - Introduction: docs/getting-started/introduction.md
-    - Installation: docs/getting-started/installation.md
-    - Quick Start: docs/getting-started/quick-start.md
+  - type: section
+    title: Get Started
+    items:
+      - title: Introduction
+        path: docs/getting-started/introduction.md
+        icon: mdi:book-open-page-variant
+
+      - title: Installation
+        path: docs/getting-started/installation.md
+        icon: mdi:download
+
+      - title: Quick Start
+        path: docs/getting-started/quick-start.md
+        icon: mdi:lightning-bolt
 
   # ============================================================================
-  # VARIATION 3: Section with Nested Subsections (2 levels deep)
+  # SECTION: USER GUIDE
   # ============================================================================
-  - User Guide:
-    - Dashboard: docs/user-guide/dashboard.md
-    - AI Assistant: docs/user-guide/ai-assistant.md
-    - Salesforce Integration: docs/user-guide/salesforce-integration.md
+  - type: section
+    title: User Guide
+    items:
+      - title: Dashboard
+        path: docs/user-guide/dashboard.md
+        icon: mdi:view-dashboard
+
+      - title: AI Assistant
+        path: docs/user-guide/ai-assistant.md
+        icon: mdi:robot
+
+      - title: Salesforce Integration
+        path: docs/user-guide/salesforce-integration.md
+        icon: mdi:cloud-sync
 
   # ============================================================================
-  # VARIATION 6: API Reference with Multiple Nested Categories
+  # SECTION: API REFERENCE
   # ============================================================================
-  - API Reference:
-    - Authentication: docs/api-reference/authentication.md
-    - Endpoints: docs/api-reference/endpoints.md
-    - Webhooks: docs/api-reference/webhooks.md
+  - type: section
+    title: API Reference
+    items:
+      - title: Authentication
+        path: docs/api-reference/authentication.md
+        icon: mdi:shield-key
+
+      - title: Endpoints
+        path: docs/api-reference/endpoints.md
+        icon: mdi:api
+
+      - title: Webhooks
+        path: docs/api-reference/webhooks.md
+        icon: mdi:webhook
 
   # ============================================================================
-  # VARIATION 8: Advanced Section with Complex Nested Topics
+  # SECTION: ADVANCED
   # ============================================================================
-  - Advanced:
-    - Custom Workflows: docs/advanced/custom-workflows.md
-    - Security: docs/advanced/security.md
-    - Troubleshooting: docs/advanced/troubleshooting.md
+  - type: section
+    title: Advanced
+    items:
+      - title: Custom Workflows
+        path: docs/advanced/custom-workflows.md
+        icon: mdi:workflow
+
+      - title: Security
+        path: docs/advanced/security.md
+        icon: mdi:security
+
+      - title: Troubleshooting
+        path: docs/advanced/troubleshooting.md
+        icon: mdi:wrench
 
   # ============================================================================
-  # VARIATION 13: Testing & Reference Documentation
+  # SECTION: TESTING & REFERENCE
   # ============================================================================
-  - Testing & Reference:
-    - Markdown Cheat Sheet: docs/markdown-cheatsheet.md
-    - Real-World Examples: docs/markdown-real-world-examples.md
-    - Ultimate Complete: docs/markdown-ultimate-complete.md
-    - Extreme Stress Test: docs/markdown-extreme-stress-test.md
+  - type: section
+    title: Testing & Reference
+    items:
+      - title: Markdown Cheat Sheet
+        path: docs/markdown-cheatsheet.md
+        icon: mdi:language-markdown
+
+      - title: Real-World Examples
+        path: docs/markdown-real-world-examples.md
+        icon: mdi:file-document-multiple
+
+      - title: Ultimate Complete
+        path: docs/markdown-ultimate-complete.md
+        icon: mdi:file-check
+
+      - title: Extreme Stress Test
+        path: docs/markdown-extreme-stress-test.md
+        icon: mdi:fire
+
+# ============================================================================
+# ICON REFERENCE GUIDE
+# ============================================================================
+# Common MDI icons you can use:
+#
+# Navigation & Actions:
+#   mdi:home, mdi:menu, mdi:arrow-right, mdi:arrow-left, mdi:close
+#   mdi:chevron-right, mdi:chevron-down, mdi:dots-vertical
+#
+# Documentation:
+#   mdi:book, mdi:book-open, mdi:book-open-page-variant, mdi:file-document
+#   mdi:file-document-multiple, mdi:notebook, mdi:text-box
+#
+# Getting Started:
+#   mdi:rocket, mdi:rocket-launch, mdi:lightning-bolt, mdi:flash
+#   mdi:download, mdi:upload
+#
+# User & Account:
+#   mdi:account, mdi:account-circle, mdi:account-group, mdi:face-agent
+#
+# Dashboard & Analytics:
+#   mdi:view-dashboard, mdi:chart-line, mdi:chart-bar, mdi:analytics
+#   mdi:poll, mdi:graph
+#
+# AI & Automation:
+#   mdi:robot, mdi:brain, mdi:robot-outline, mdi:chip, mdi:auto-fix
+#
+# Integration & Sync:
+#   mdi:cloud-sync, mdi:sync, mdi:connection, mdi:lan-connect
+#   mdi:api, mdi:webhook
+#
+# Security:
+#   mdi:security, mdi:shield, mdi:shield-key, mdi:lock, mdi:key
+#   mdi:two-factor-authentication
+#
+# Settings & Configuration:
+#   mdi:cog, mdi:settings, mdi:tune, mdi:wrench, mdi:tools
+#
+# Workflow & Process:
+#   mdi:workflow, mdi:sitemap, mdi:graph, mdi:source-branch
+#   mdi:timeline, mdi:git-branch
+#
+# Code & Development:
+#   mdi:code-tags, mdi:code-braces, mdi:console, mdi:terminal
+#   mdi:file-code, mdi:xml
+#
+# Testing & QA:
+#   mdi:test-tube, mdi:bug, mdi:beaker, mdi:flask
+#   mdi:fire, mdi:speedometer
+#
+# Communication:
+#   mdi:email, mdi:message, mdi:forum, mdi:chat, mdi:comment
+#
+# Status Indicators:
+#   mdi:check, mdi:check-circle, mdi:alert, mdi:alert-circle
+#   mdi:information, mdi:help-circle
+#
+# Files & Storage:
+#   mdi:folder, mdi:file, mdi:file-multiple, mdi:database
+#   mdi:archive, mdi:package
+#
+# Search & Filter:
+#   mdi:magnify, mdi:filter, mdi:filter-variant, mdi:search-web
+#
+# Media:
+#   mdi:image, mdi:video, mdi:play, mdi:pause
+#
+# Markdown specific:
+#   mdi:language-markdown, mdi:language-markdown-outline
+#
+# Browse all icons at: https://pictogrammers.com/library/mdi/
