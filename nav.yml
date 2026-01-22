@@ -1,0 +1,21 @@
+nav:
+  - Getting Started:
+    - Welcome: docs/README.md
+    - Introduction: docs/getting-started/introduction.md
+    - Installation: docs/getting-started/installation.md
+    - Quick Start: docs/getting-started/quick-start.md
+
+  - User Guide:
+    - Dashboard Overview: docs/user-guide/dashboard.md
+    - AI Assistant: docs/user-guide/ai-assistant.md
+    - Salesforce Integration: docs/user-guide/salesforce-integration.md
+
+  - API Reference:
+    - Authentication: docs/api-reference/authentication.md
+    - Endpoints: docs/api-reference/endpoints.md
+    - Webhooks: docs/api-reference/webhooks.md
+
+  - Advanced:
+    - Custom Workflows: docs/advanced/custom-workflows.md
+    - Security: docs/advanced/security.md
+    - Troubleshooting: docs/advanced/troubleshooting.md
