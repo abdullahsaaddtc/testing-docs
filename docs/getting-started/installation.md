@@ -11,10 +11,10 @@ This guide will walk you through the process of installing and setting up Scopie
 
 Before you begin, ensure you have:
 
-- ✅ Salesforce org (Professional, Enterprise, or Unlimited edition)
-- ✅ System Administrator access to Salesforce
-- ✅ Modern web browser (Chrome, Firefox, Safari, or Edge)
-- ✅ Valid email address for account creation
+- Salesforce org (Professional, Enterprise, or Unlimited edition)
+- System Administrator access to Salesforce
+- Modern web browser (Chrome, Firefox, Safari, or Edge)
+- Valid email address for account creation
 
 ## Installation Methods
 
@@ -222,10 +222,10 @@ Now that Scopien AI is installed:
 
 Need help with installation?
 
-- 📧 Email: support@scopien.com
-- 💬 Live Chat: Available 24/7 in app
-- 📞 Phone: +1 (800) SCOPIEN
-- 📚 Knowledge Base: https://help.scopien.com
+- Email: support@scopien.com
+- Live Chat: Available 24/7 in app
+- Phone: +1 (800) SCOPIEN
+- Knowledge Base: https://help.scopien.com
 
 ---
 

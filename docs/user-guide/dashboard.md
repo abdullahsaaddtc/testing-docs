@@ -11,15 +11,15 @@ Your Scopien AI dashboard is your command center for all Salesforce operations. 
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  🏠 Scopien AI          🔍 Search    🔔 Alerts    👤 Profile  │
+│  Scopien AI             Search       Alerts       Profile    │
 ├──────────────────────────────────────────────────────────────┤
 │  Sidebar    │  Main Content Area                             │
 │  ─────────  │  ───────────────────────────────────           │
-│  📊 Home    │  ┌─────────────┐  ┌─────────────┐             │
-│  💬 AI Chat │  │  Revenue    │  │  Pipeline   │             │
-│  📈 Reports │  │  $2.5M      │  │  45 Deals   │             │
-│  👥 Teams   │  └─────────────┘  └─────────────┘             │
-│  ⚙️ Settings│                                                │
+│  Home       │  ┌─────────────┐  ┌─────────────┐             │
+│  AI Chat    │  │  Revenue    │  │  Pipeline   │             │
+│  Reports    │  │  $2.5M      │  │  45 Deals   │             │
+│  Teams      │  └─────────────┘  └─────────────┘             │
+│  Settings   │                                                │
 │             │  Recent Activity                               │
 │             │  • Lead created at 10:23 AM                    │
 │             │  • Opportunity updated at 9:45 AM              │
@@ -36,13 +36,13 @@ Your Scopien AI dashboard is your command center for all Salesforce operations. 
 - Recent searches dropdown
 - Quick filters
 
-**Notifications** (🔔)
+**Notifications**
 - Real-time alerts
 - Task reminders
 - System updates
 - Team mentions
 
-**Profile Menu** (👤)
+**Profile Menu**
 - Account settings
 - Preferences
 - Help & support
@@ -50,29 +50,29 @@ Your Scopien AI dashboard is your command center for all Salesforce operations. 
 
 ### 2. Sidebar Navigation
 
-**Home Dashboard** (📊)
+**Home Dashboard**
 - Overview of key metrics
 - Quick access widgets
 - Recent activity feed
 
-**AI Assistant** (💬)
+**AI Assistant**
 - Natural language interface
 - Command history
 - Saved queries
 - Smart suggestions
 
-**Reports** (📈)
+**Reports**
 - Pre-built reports
 - Custom reports
 - Scheduled reports
 - Export options
 
-**Teams** (👥)
+**Teams**
 - Team members
 - Performance metrics
 - Collaboration tools
 
-**Settings** (⚙️)
+**Settings**
 - Account configuration
 - Integration settings
 - Automation rules
@@ -224,10 +224,10 @@ Monitor your most important accounts:
 
 | Account | Revenue | Health | Next Action |
 |---------|---------|--------|-------------|
-| Acme Corp | $500K | 🟢 Excellent | Renewal call next week |
-| TechStart | $350K | 🟡 Good | Upsell opportunity |
-| Global Inc | $280K | 🟡 Good | Quarterly review due |
-| Innovation | $250K | 🔴 At Risk | Urgent: Address concerns |
+| Acme Corp | $500K | Excellent | Renewal call next week |
+| TechStart | $350K | Good | Upsell opportunity |
+| Global Inc | $280K | Good | Quarterly review due |
+| Innovation | $250K | At Risk | Urgent: Address concerns |
 
 **Health Score** based on:
 - Engagement frequency
@@ -296,13 +296,13 @@ Access your dashboard on mobile:
 
 ### Best Practices
 
-✅ **Do:**
+**Do:**
 - Arrange most-used widgets at top
 - Use filters to reduce data
 - Enable auto-refresh for live data
 - Customize per role/function
 
-❌ **Don't:**
+**Don't:**
 - Overload with widgets
 - Use all-time date ranges
 - Ignore performance warnings

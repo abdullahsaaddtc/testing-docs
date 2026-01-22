@@ -15,7 +15,7 @@ After logging in, you'll see your main dashboard with:
 ┌─────────────────────────────────────────────────┐
 │  Scopien AI Dashboard                           │
 ├─────────────────────────────────────────────────┤
-│  📊 Quick Stats        🤖 AI Assistant          │
+│  Quick Stats           AI Assistant             │
 │  • 1,234 Records       • Ask me anything        │
 │  • 56 Opportunities    • Get instant answers    │
 │  • 89 Open Cases       • Automate tasks         │
@@ -56,7 +56,7 @@ email john.smith@apple.com, interested in our Enterprise plan
 
 **AI responds:**
 ```
-✅ Lead created successfully!
+Lead created successfully!
 
 Details:
 • Name: John Smith
@@ -80,11 +80,11 @@ Create a report showing top 5 accounts by revenue this quarter
 
 | Account Name | Revenue | Change | Status |
 |--------------|---------|--------|--------|
-| Enterprise Corp | $2.5M | +15% ⬆️ | Active |
-| Global Tech | $1.8M | +8% ⬆️ | Active |
-| Innovation Labs | $1.2M | -3% ⬇️ | Active |
-| Digital Solutions | $950K | +22% ⬆️ | Active |
-| Cloud Systems | $820K | +5% ⬆️ | Active |
+| Enterprise Corp | $2.5M | +15% | Active |
+| Global Tech | $1.8M | +8% | Active |
+| Innovation Labs | $1.2M | -3% | Active |
+| Digital Solutions | $950K | +22% | Active |
+| Cloud Systems | $820K | +5% | Active |
 
 ## Step 3: Explore Key Features
 
@@ -128,7 +128,7 @@ Speed up your workflow with shortcuts:
 
 ### Customize Your Dashboard
 
-1. Click the ⚙️ icon in the top right
+1. Click the Settings icon in the top right
 2. Select "Customize Dashboard"
 3. Add widgets:
    - Revenue Chart
@@ -215,24 +215,24 @@ open opportunities, and recent activities
 
 ## Pro Tips
 
-### 💡 Tip 1: Use Filters
+### Tip 1: Use Filters
 ```
 Show me opportunities closing next month
 with value over $100k in the healthcare industry
 ```
 
-### 💡 Tip 2: Batch Operations
+### Tip 2: Batch Operations
 ```
 Update all leads from yesterday's webinar
 to status "Contacted"
 ```
 
-### 💡 Tip 3: Scheduled Reports
+### Tip 3: Scheduled Reports
 ```
 Send me a pipeline report every Monday at 9am
 ```
 
-### 💡 Tip 4: Context Memory
+### Tip 4: Context Memory
 The AI remembers your conversation context:
 ```
 You: Show me top 10 opportunities
@@ -270,10 +270,10 @@ Now that you're familiar with the basics:
 
 ## Resources
 
-- 📹 [Video Tutorials](https://scopien.com/tutorials)
-- 📖 [Best Practices Guide](https://scopien.com/best-practices)
-- 💬 [Community Forum](https://community.scopien.com)
-- 🎓 [Certification Program](https://academy.scopien.com)
+- [Video Tutorials](https://scopien.com/tutorials)
+- [Best Practices Guide](https://scopien.com/best-practices)
+- [Community Forum](https://community.scopien.com)
+- [Certification Program](https://academy.scopien.com)
 
 ---
 
