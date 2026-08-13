@@ -1,595 +1,222 @@
-# 🎯 Complete Markdown Test Suite
+# Markdown Fixture Inventory and Release Gate
 
-## Overview
+This document defines what each Markdown fixture is responsible for and how to decide whether a documentation renderer change is ready to ship.
 
-This test suite contains **EVERYTHING POSSIBLE** in markdown. Every element, every combination, every edge case, every stress test.
+## Scope
 
-**Total Files:** 4 comprehensive test documents
-**Total Patterns:** 7500+
-**Total Size:** ~150KB
-**Coverage:** 100% of markdown + HTML + custom elements
+The suite exercises the admin documentation experience end to end:
 
----
+- GitHub-backed page loading.
+- nav.yml ordering and routes.
+- Markdown and trusted HTML rendering.
+- Heading extraction and quick navigation.
+- Link rewriting.
+- Responsive layout and overflow containment.
+- Accessibility and interaction.
+- Large-page performance.
 
-## 📁 Test Files
+The files are intentionally broad. They are manual and exploratory fixtures, not automated assertions.
 
-### 1. markdown-cheatsheet.md
-**Size:** ~15KB | **Patterns:** 100+ | **Level:** Basic to Advanced
+## Fixture 1: Markdown cheat sheet
 
-**Contains:**
-- ✅ All 6 header levels (H1-H6) with variations
-- ✅ Text formatting (bold, italic, strikethrough, underline, combinations)
-- ✅ Lists (unordered, ordered, nested 5 levels, task lists, mixed markers)
-- ✅ Links (inline, reference, automatic, with formatting, relative, footnotes)
-- ✅ Images (basic, reference, HTML sizing, aligned, with captions, clickable)
-- ✅ Code blocks (inline, 15+ languages, line numbers, highlighting)
-- ✅ Tables (simple, aligned, complex, with formatting, long content)
-- ✅ Blockquotes (simple, nested 4 levels, with all elements)
-- ✅ Horizontal rules (3 syntaxes)
-- ✅ HTML elements (details/summary, div, kbd, mark, abbr, figure)
-- ✅ Special features (emojis, math, Mermaid diagrams, badges)
-- ✅ Complex combinations
-- ✅ Edge cases (empty elements, special characters, unicode)
+Path: docs/markdown-cheatsheet.md
 
-**Use for:** Basic rendering tests, syntax verification, standard markdown
+Use it for the first rendering pass. It provides the fastest way to find regressions in common syntax.
 
----
+Primary coverage:
 
-### 2. markdown-real-world-examples.md
-**Size:** ~28KB | **Patterns:** 50+ | **Level:** Practical Applications
+- ATX headings.
+- Text emphasis and inline code.
+- Ordered, unordered, nested, and task lists.
+- Links, autolinks, and images.
+- Blockquotes.
+- Fenced and indented code.
+- GFM tables.
+- Escaping and special characters.
 
-**Contains:**
-- ✅ Complete API documentation example
-  - GET endpoint with parameters
-  - Request/response examples
-  - Error documentation (401, 404, 429)
-  - Code examples in 3 languages (JS, Python, cURL)
-  - Collapsible error sections
-- ✅ Step-by-step tutorial (5 steps)
-  - Prerequisites
-  - Code blocks with explanations
-  - Screenshots
-  - Troubleshooting section
-  - Next steps
-- ✅ Pricing comparison table (complex table with emojis, badges, formatting)
-- ✅ Changelog documentation
-  - Version history
-  - New features
-  - Breaking changes
-  - Contributors
-  - Links to commits
-- ✅ Error documentation with solutions
-- ✅ FAQ section (nested collapsibles)
-- ✅ Best practices guide (DO/DON'T patterns)
+Release expectation: common supported elements render correctly before testing any larger fixture.
 
-**Use for:** Testing real documentation layouts, long-form content, practical patterns
+## Fixture 2: Real-world examples
 
----
+Path: docs/markdown-real-world-examples.md
 
-### 3. markdown-ultimate-complete.md ⭐
-**Size:** ~40KB | **Patterns:** 500+ | **Level:** Comprehensive
+Use it to evaluate full-page reading behavior rather than isolated syntax.
 
-**Contains:**
+Primary coverage:
 
-#### Images Everywhere
-- ✅ Images in tables (product galleries)
-- ✅ Multiple images in same cell
-- ✅ Images in lists (nested)
-- ✅ Images in blockquotes
-- ✅ Images in collapsible sections
-- ✅ Clickable images with captions
-- ✅ Images in grids (2, 3, 4 columns)
-- ✅ Images side by side
-- ✅ Images with different sizes
-- ✅ Rounded images
-- ✅ Images with borders and shadows
-- ✅ Overlapping images
+- API reference layouts.
+- Tutorials and procedural steps.
+- Long code samples.
+- Comparison tables.
+- Changelog entries.
+- Error documentation.
+- FAQs and best-practice guides.
 
-#### Advanced Tables
-- ✅ Tables with images and code
-- ✅ Tables with links and badges
-- ✅ Nested tables (table in table cell)
-- ✅ Tables with merged cells (HTML)
-- ✅ Color-coded rows
-- ✅ Tables with progress bars
-- ✅ Tables with checkboxes
-- ✅ Tables with collapsible rows
-- ✅ Very wide tables (15+ columns)
-- ✅ Tables with emoji icons
-- ✅ Tables with code blocks in cells
-- ✅ 50-row table
+Release expectation: long-form pages remain readable, navigable, and contained within the article column.
 
-#### Grid Layouts
-- ✅ 2-column grid
-- ✅ 3-column grid
-- ✅ 4-column grid
-- ✅ Mixed width grid (2fr 1fr)
-- ✅ Card grid (responsive)
-- ✅ Nested grids
+This fixture contains fictional product links for realism. Those destinations are not link-integrity assertions. Test route rewriting with a known nav.yml page.
 
-#### Custom Styling
-- ✅ Colored text boxes (success, warning, error, info, tip)
-- ✅ Colored text (6 colors)
-- ✅ Background highlighted text
-- ✅ Badges (4 types)
-- ✅ Buttons (4 styles)
-- ✅ Pills/tags
-- ✅ Progress bars (3 examples with gradients)
-- ✅ Custom containers with icons
-- ✅ Fake tabs
-- ✅ Timeline
+## Fixture 3: Ultimate complete
 
-#### Videos & Media
-- ✅ Embedded YouTube video
-- ✅ HTML5 video
-- ✅ Audio player
-- ✅ Embedded map (Google Maps)
-- ✅ CodePen embed
+Path: docs/markdown-ultimate-complete.md
 
-#### Complex Nesting
-- ✅ Everything in a blockquote (headers, lists, tables, code, images, nested quotes, collapsibles)
-- ✅ Everything in a collapsible section
-- ✅ List with everything (images, code, tables, quotes, nested lists, collapsibles, HTML)
-- ✅ Table with everything in cells
+Use it for rich-content and raw-HTML compatibility checks.
 
-#### All Combinations
-- ✅ Bold + italic + strikethrough + code
-- ✅ Link + image + bold + italic
-- ✅ List + blockquote + code + image
-- ✅ Table + list + code + image + links
-- ✅ Collapsible + table + code + image + list
+Primary coverage:
 
-#### Interactive Elements
-- ✅ Fake accordion
-- ✅ Fake dropdown menu
-- ✅ Toggle switches
-- ✅ Radio buttons
-- ✅ Checkboxes with labels
-- ✅ Star ratings
-- ✅ Rating with colors
+- Images in lists, tables, and links.
+- Wide and complex tables.
+- HTML layout constructs and details controls.
+- Media and embed examples.
+- Nested combinations.
+- Unicode and unusual content.
+- Long words, URLs, and dense layouts.
 
-#### Edge Cases
-- ✅ Empty elements
-- ✅ Very long words
-- ✅ Very long URLs
-- ✅ Special characters in tables
-- ✅ Unicode characters (Greek, Math, Arrows, Symbols, Currencies)
-- ✅ Emoji combinations (100+)
-- ✅ ASCII art
-- ✅ All HTML entities
-- ✅ Nested everything maximum
-- ✅ Mix of everything in one line
+Some examples intentionally exceed the supported Markdown contract. Treat them as graceful-degradation checks, not as requirements that the app implement every browser or HTML feature.
 
-**Use for:** Testing every possible markdown feature, comprehensive UI testing
+Release expectation: supported content works and unsupported content fails safely without breaking the page shell.
 
----
+## Fixture 4: Extreme stress test
 
-### 4. markdown-extreme-stress-test.md 🔥
-**Size:** ~60KB | **Patterns:** 2000+ | **Level:** EXTREME
+Path: docs/markdown-extreme-stress-test.md
 
-**Contains:**
+Use it last. It is designed to expose scaling, overflow, and synchronization failures.
 
-#### Every Element Inside Every Other Element
-- ✅ Images in headers
-- ✅ Images in bold/italic/code/links
-- ✅ Images in lists (3 levels deep)
-- ✅ Images in quotes (nested)
-- ✅ Images in kbd tags
-- ✅ Code in headers/bold/italic/strikethrough/links/quotes/tables/lists/details
-- ✅ Links in headers/bold/italic/strikethrough/quotes/tables/lists
-- ✅ Lists in tables/blockquotes/details
-- ✅ Tables in lists/blockquotes/details/tables (nested)
-- ✅ Blockquotes in lists/tables/details
+Primary coverage:
 
-#### All Text Formatting Combinations
-- ✅ Two-way combinations (12 patterns)
-- ✅ Three-way combinations (8 patterns)
-- ✅ Four-way combinations (4 patterns)
-- ✅ Five-way combination (MAXIMUM)
+- Deep nesting.
+- Very large tables.
+- Large numbers of links, images, and emoji.
+- Long single-line content.
+- Complex Mermaid source.
+- International characters.
+- Dense mixed-content sections.
 
-#### Massive Tables
-- ✅ 20-column table
-- ✅ 50-row table
-- ✅ Table with every element type (10 rows)
-- ✅ Table with collapsible rows
-- ✅ Table with checkboxes
-- ✅ Table with progress bars
-- ✅ Table with code blocks in cells
+Math examples are plain text/code unless TeX support is added to the application. They must not be used as proof of math-rendering support.
 
-#### Complex Layouts
-- ✅ Mega grid with everything (8 cards)
-- ✅ Nested grids (3 levels)
-- ✅ Each card contains: images, lists, quotes, code, tables, buttons
+Release expectation: the page stays usable, the browser remains responsive, and a single unsupported block does not break surrounding content.
 
-#### Mathematical Formulas
-- ✅ Inline math (3 examples)
-- ✅ Block math (5 formulas: integrals, sums, limits, PDEs, matrices)
-- ✅ Complex formulas (2 advanced examples)
+## Coverage matrix
 
-#### Advanced Diagrams
-- ✅ Complex flowchart (12 nodes, styling)
-- ✅ Complex sequence diagram (7 participants, alt blocks)
-- ✅ Complex class diagram (6 classes, inheritance, notes)
-- ✅ Complex Gantt chart (4 sections, 15 tasks)
-- ✅ State diagram (8 states, transitions)
-- ✅ ER diagram (5 entities, relationships)
-- ✅ Pie chart
+| Behavior              | Cheat sheet |  Real world  |   Ultimate   |   Extreme    |
+| --------------------- | :---------: | :----------: | :----------: | :----------: |
+| Common Markdown       |   Primary   |     Yes      |     Yes      |     Yes      |
+| GFM tables and tasks  |   Primary   |     Yes      |   Primary    |    Stress    |
+| Code blocks           |   Primary   |   Primary    |     Yes      |    Stress    |
+| Images                |   Primary   |     Yes      |   Primary    |    Stress    |
+| Raw HTML              |    Some     |     Some     |   Primary    |    Stress    |
+| Long-form readability |    Some     |   Primary    |     Yes      |    Stress    |
+| Responsive overflow   |     Yes     |     Yes      |   Primary    |   Primary    |
+| Quick navigation      |     Yes     |   Primary    |   Primary    |   Primary    |
+| Link rewriting        |   Primary   | Illustrative | Illustrative | Illustrative |
+| Accessibility         |   Primary   |   Primary    |   Primary    |    Stress    |
+| Performance           |  Baseline   |   Baseline   |    Heavy     |   Primary    |
 
-#### Extreme Nesting
-- ✅ 10-level deep list
-- ✅ 10-level deep blockquote
-- ✅ 5-level nested collapsible sections (with table, code, image at max depth)
+## Required environments
 
-#### International Characters
-- ✅ 15 languages (English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, Korean, Chinese, Arabic, Hebrew, Hindi, Thai)
+Run the release gate against:
 
-#### Stress Test Elements
-- ✅ 1000 emojis
-- ✅ 100 links in one paragraph
-- ✅ Very long single line (200+ characters)
-- ✅ 50 images grid (10x5)
+- A local development build for fast diagnosis.
+- A production build when the change affects rendering, hydration, caching, or bundle behavior.
+- The canonical GitHub repository configuration.
 
-#### FINAL BOSS
-- ✅ Everything combined in one massive section
-  - Gradient background
-  - 2-column grid
-  - Lists with images, quotes, code, tables
-  - Collapsibles with nested elements
-  - Tables with images, code, links
-  - Custom HTML styling
-  - Tags/badges
+Use at least one Chromium browser. Add Safari or Firefox when the change touches scrolling, sticky positioning, raw media, or browser-specific CSS.
 
-**Use for:** Maximum stress testing, performance testing, edge case handling
+## Release gate
 
----
+### Repository and navigation
 
-## 📊 Complete Coverage Matrix
+- [ ] nav.yml loads without error.
+- [ ] Every referenced Markdown path exists.
+- [ ] Home is the stable landing page.
+- [ ] Sidebar order matches nav.yml.
+- [ ] Search finds nested pages.
+- [ ] Folder default-open behavior is correct.
+- [ ] Breadcrumbs reflect nested folders.
+- [ ] Previous and next follow depth-first nav order.
 
-| Feature | Cheatsheet | Real-World | Ultimate | Extreme |
-|---------|-----------|------------|----------|---------|
-| **Basic Markdown** |
-| Headers | ✅ | ✅ | ✅ | ✅ |
-| Text Formatting | ✅ | ✅ | ✅ | ✅✅✅ |
-| Lists | ✅ | ✅ | ✅✅ | ✅✅✅ |
-| Links | ✅ | ✅ | ✅✅ | ✅✅✅ |
-| Images | ✅ | ✅ | ✅✅✅✅ | ✅✅✅✅✅ |
-| Code | ✅ | ✅✅ | ✅✅ | ✅✅ |
-| Tables | ✅ | ✅✅ | ✅✅✅✅ | ✅✅✅✅✅ |
-| Blockquotes | ✅ | ✅ | ✅✅ | ✅✅✅ |
-| **Extended Features** |
-| Task Lists | ✅ | ✅ | ✅ | ✅ |
-| Footnotes | ✅ | - | - | - |
-| Emojis | ✅ | ✅ | ✅✅ | ✅✅✅✅ |
-| Math | ✅ | - | - | ✅✅✅ |
-| Diagrams | ✅ | - | - | ✅✅✅✅ |
-| **HTML Elements** |
-| Details/Summary | ✅ | ✅✅ | ✅✅✅ | ✅✅✅✅ |
-| Custom Divs | ✅ | ✅✅ | ✅✅✅✅ | ✅✅✅✅✅ |
-| Forms | ✅ | - | ✅✅ | ✅✅ |
-| Videos | ✅ | - | ✅✅✅ | - |
-| **Layouts** |
-| Grids | - | - | ✅✅✅✅ | ✅✅✅✅✅ |
-| Cards | - | - | ✅✅✅ | ✅✅✅✅ |
-| Timelines | - | - | ✅ | - |
-| Tabs | - | - | ✅ | - |
-| **Stress Tests** |
-| Nesting Depth | 4 levels | 3 levels | 5 levels | 10 levels |
-| Table Size | 4x4 | 5x5 | 15x20 | 20x50 |
-| Image Count | 10 | 20 | 50+ | 100+ |
-| Code Blocks | 15 | 30 | 40 | 50+ |
-| International | Basic | - | - | 15 languages |
-| **Combinations** |
-| Element Combos | 50 | 100 | 500+ | 2000+ |
-| Nesting Combos | 20 | 50 | 200+ | 1000+ |
+### Page header and headings
 
-**Legend:**
-- ✅ = Basic coverage
-- ✅✅ = Moderate coverage
-- ✅✅✅ = Extensive coverage
-- ✅✅✅✅ = Complete coverage
-- ✅✅✅✅✅ = Extreme coverage
+- [ ] The leading H1 appears once.
+- [ ] The first plain paragraph becomes the summary.
+- [ ] Leading non-paragraph blocks remain in the article.
+- [ ] Quick navigation includes H2-H6 headings.
+- [ ] Duplicate headings receive distinct targets.
+- [ ] A clicked heading remains active after smooth scrolling ends.
+- [ ] The last heading activates at the bottom of the page.
 
----
+### Rendering
 
-## 🎯 Testing Strategy
+- [ ] Common Markdown renders correctly.
+- [ ] GFM tables and task lists render correctly.
+- [ ] Code copy works.
+- [ ] Mermaid renders or shows an isolated controlled failure.
+- [ ] Trusted HTML cannot break the page shell.
+- [ ] Unsupported math/custom-ID syntax is not presented as supported.
+- [ ] Relative links to pages mapped in nav.yml resolve.
+- [ ] External links open safely in a new tab.
+- [ ] Images use reachable URLs and useful alt text.
 
-### Phase 1: Basic Rendering
-**Use:** markdown-cheatsheet.md
+### Layout and theme
 
-**Test:**
-- [ ] All headers render correctly
-- [ ] Text formatting works
-- [ ] Lists display properly
-- [ ] Code blocks have syntax highlighting
-- [ ] Tables are formatted
-- [ ] Images load
-- [ ] Links are clickable
-
-### Phase 2: Real-World Scenarios
-**Use:** markdown-real-world-examples.md
-
-**Test:**
-- [ ] Long-form documentation reads well
-- [ ] API documentation layout is clean
-- [ ] Tutorials are easy to follow
-- [ ] Collapsibles work smoothly
-- [ ] Code examples are readable
-- [ ] Tables are responsive
-
-### Phase 3: Comprehensive Features
-**Use:** markdown-ultimate-complete.md
-
-**Test:**
-- [ ] Images in tables render
-- [ ] Grids display correctly
-- [ ] Custom styling applies
-- [ ] Videos/media embed properly
-- [ ] Interactive elements work
-- [ ] Complex nesting handles correctly
-- [ ] All combinations display
-
-### Phase 4: Stress Testing
-**Use:** markdown-extreme-stress-test.md
-
-**Test:**
-- [ ] 10-level nesting works
-- [ ] Massive tables render
-- [ ] 1000+ emojis display
-- [ ] 100+ images load efficiently
-- [ ] Math formulas render
-- [ ] Complex diagrams display
-- [ ] International characters work
-- [ ] Performance remains good
-- [ ] No browser crashes
-
----
-
-## 🔧 What to Check
-
-### Visual
-- [ ] Headers have hierarchy
-- [ ] Text is readable
-- [ ] Colors are correct
-- [ ] Spacing is appropriate
-- [ ] Alignment works
-- [ ] Images are proportional
-- [ ] Tables fit container
-- [ ] Code is monospaced
-
-### Functional
-- [ ] Links navigate
-- [ ] Images load
-- [ ] Collapsibles toggle
-- [ ] Videos play
-- [ ] Checkboxes display
-- [ ] Forms work
-- [ ] Buttons are clickable
-- [ ] Scrolling is smooth
-
-### Responsive
-- [ ] Mobile layout adjusts
-- [ ] Tables scroll horizontally
-- [ ] Images scale down
-- [ ] Grids stack
-- [ ] Text wraps
-- [ ] Navigation works
-- [ ] Touch targets are adequate
-
-### Performance
-- [ ] Initial load < 3s
-- [ ] Scrolling is smooth (60fps)
-- [ ] Images lazy-load
-- [ ] No memory leaks
-- [ ] Syntax highlighting doesn't block
-- [ ] Large tables render incrementally
+- [ ] Outer gutter and docs sidebar retain the approved dark treatment.
+- [ ] The rounded reading canvas retains the shared Scopien glass background.
+- [ ] No unintended decorative border appears on the canvas or quick nav.
+- [ ] Article width remains readable on wide screens.
+- [ ] Quick navigation remains visible in its desktop column.
+- [ ] Mobile navigation and quick-nav select remain usable.
+- [ ] Tables, code, media, long URLs, and long words do not widen the page.
 
 ### Accessibility
-- [ ] Headers create outline
-- [ ] Images have alt text
-- [ ] Links are descriptive
-- [ ] Color contrast is sufficient
-- [ ] Keyboard navigation works
-- [ ] Screen readers can navigate
-- [ ] Focus indicators visible
 
-### Edge Cases
-- [ ] Empty elements don't break
-- [ ] Long words wrap or truncate
-- [ ] Special characters display
-- [ ] Unicode characters work
-- [ ] Very deep nesting renders
-- [ ] Massive content loads
-- [ ] Invalid markdown fails gracefully
+- [ ] All controls work by keyboard.
+- [ ] Focus indicators are visible.
+- [ ] Headings form a coherent outline.
+- [ ] Active navigation is exposed with the correct current-state semantics.
+- [ ] Table overflow regions are keyboard reachable.
+- [ ] Images have appropriate alt text.
 
----
+### Performance and reliability
 
-## 📈 Performance Benchmarks
+- [ ] The extreme page does not freeze the browser.
+- [ ] Scrolling and active-heading updates remain responsive.
+- [ ] Quick navigation loads reliably on direct navigation and refresh.
+- [ ] GitHub errors produce a controlled unavailable/not-found state.
+- [ ] No token or private repository data is exposed to client code.
 
-### Expected Load Times
+## Failure severity
 
-| File | Size | Load Time | Parse Time | Render Time |
-|------|------|-----------|------------|-------------|
-| markdown-cheatsheet.md | 15KB | < 0.5s | < 0.1s | < 0.5s |
-| markdown-real-world-examples.md | 28KB | < 1s | < 0.2s | < 1s |
-| markdown-ultimate-complete.md | 40KB | < 2s | < 0.5s | < 2s |
-| markdown-extreme-stress-test.md | 60KB | < 3s | < 1s | < 3s |
+Use these levels when reporting results:
 
-### Performance Targets
+| Level   | Meaning                                                | Examples                                              |
+| ------- | ------------------------------------------------------ | ----------------------------------------------------- |
+| Blocker | Documentation cannot be used or exposes sensitive data | Repository fails to load, token leak                  |
+| High    | Core navigation or reading flow is broken              | Wrong page, missing quick nav, unusable mobile layout |
+| Medium  | Supported content is incorrect but a workaround exists | Table overflow, code copy failure                     |
+| Low     | Cosmetic issue with no meaningful loss of function     | Minor spacing or color inconsistency                  |
 
-- **First Contentful Paint:** < 1s
-- **Time to Interactive:** < 3s
-- **Smooth Scrolling:** 60fps
-- **Memory Usage:** < 100MB
-- **CPU Usage:** < 30%
+## Regression record
 
----
+For each release candidate, record:
 
-## 🐛 Common Issues & Solutions
+- ScopienOS commit.
+- Documentation repository commit.
+- Environment and build mode.
+- Browser and viewport set.
+- Fixtures tested.
+- Failures with severity and reproduction.
+- Reviewer and date.
 
-### Issue 1: Tables Overflow
-**Solution:**
-```css
-.markdown-content table {
-  display: block;
-  overflow-x: auto;
-}
-```
+Do not write a permanent pass/fail claim into this file. Test results belong in the pull request or release record because the fixtures and renderer continue to change.
 
-### Issue 2: Images Too Large
-**Solution:**
-```css
-.markdown-content img {
-  max-width: 100%;
-  height: auto;
-}
-```
+## Suite maintenance
 
-### Issue 3: Code Blocks Have No Syntax Highlighting
-**Solution:**
-- Install Prism.js or Highlight.js
-- Import language packs
-- Apply highlighting during render
+When adding a renderer feature:
 
-### Issue 4: Very Deep Nesting Causes Layout Issues
-**Solution:**
-- Limit maximum nesting depth in CSS
-- Add horizontal scroll for deep lists
-- Consider flattening content
+1. Add the smallest representative example to the cheat sheet.
+2. Add a realistic example only if the feature appears in normal documentation.
+3. Add an edge or scaling example only when it can reveal a distinct failure.
+4. Update the feature matrix and known limitations in MARKDOWN-TESTING-GUIDE.md.
+5. Remove stale examples instead of preserving unsupported claims indefinitely.
 
-### Issue 5: Math Formulas Don't Render
-**Solution:**
-- Install KaTeX or MathJax
-- Add math rendering to your markdown parser
-- Use remark-math plugin
-
-### Issue 6: Mermaid Diagrams Don't Show
-**Solution:**
-- Install Mermaid.js
-- Initialize Mermaid on page load
-- Use remark-mermaid plugin
-
----
-
-## 📦 Recommended Packages
-
-### Markdown Parser
-```bash
-npm install react-markdown remark-gfm remark-math rehype-katex rehype-raw
-```
-
-### Syntax Highlighting
-```bash
-npm install prismjs
-# or
-npm install highlight.js
-```
-
-### Diagram Rendering
-```bash
-npm install mermaid
-```
-
-### Math Rendering
-```bash
-npm install katex
-```
-
----
-
-## ✅ Testing Checklist
-
-Print this and check off as you test:
-
-### Basic Elements
-- [ ] H1 through H6 headers
-- [ ] Bold, italic, strikethrough
-- [ ] Inline code
-- [ ] Code blocks with syntax highlighting
-- [ ] Unordered lists
-- [ ] Ordered lists
-- [ ] Task lists
-- [ ] Links
-- [ ] Images
-- [ ] Blockquotes
-- [ ] Horizontal rules
-- [ ] Tables
-
-### Advanced Elements
-- [ ] Nested lists (5 levels)
-- [ ] Nested blockquotes (4 levels)
-- [ ] Images in tables
-- [ ] Code in tables
-- [ ] Links in tables
-- [ ] Collapsible sections
-- [ ] Custom HTML containers
-- [ ] Emojis
-- [ ] Footnotes
-
-### Special Features
-- [ ] Math equations (inline)
-- [ ] Math equations (block)
-- [ ] Mermaid flowcharts
-- [ ] Mermaid sequence diagrams
-- [ ] Mermaid class diagrams
-- [ ] Mermaid Gantt charts
-- [ ] Embedded videos
-- [ ] Audio players
-
-### Layouts
-- [ ] 2-column grids
-- [ ] 3-column grids
-- [ ] 4-column grids
-- [ ] Card layouts
-- [ ] Nested grids
-- [ ] Timeline layouts
-
-### Stress Tests
-- [ ] 10-level deep nesting
-- [ ] 20-column table
-- [ ] 50-row table
-- [ ] 100+ images
-- [ ] 1000+ emojis
-- [ ] Very long words
-- [ ] International characters
-- [ ] Very deep nesting
-
-### Combinations
-- [ ] Everything in blockquote
-- [ ] Everything in collapsible
-- [ ] Everything in table cells
-- [ ] Everything in lists
-- [ ] Multiple formatting on same text
-
----
-
-## 🎓 Summary
-
-You now have **THE MOST COMPREHENSIVE** markdown test suite ever created:
-
-**4 test files** covering:
-- 7500+ unique patterns
-- 150KB of test content
-- 100% markdown coverage
-- All HTML elements
-- Every possible combination
-- International support
-- Extreme stress tests
-
-**Use this suite to:**
-1. ✅ Verify your markdown parser works correctly
-2. ✅ Test your UI renders everything properly
-3. ✅ Check responsive design
-4. ✅ Validate syntax highlighting
-5. ✅ Test performance under load
-6. ✅ Ensure accessibility
-7. ✅ Catch edge cases
-
-**If your renderer handles all 4 files perfectly, it can handle ANYTHING! 🚀**
-
----
-
-**Created:** January 22, 2026
-**Version:** 1.0.0
-**Total Patterns:** 7500+
-**Total Coverage:** 100%
-**Test Level:** EXTREME ⭐⭐⭐⭐⭐
+Keep this inventory concise. The fixtures demonstrate syntax; this document defines ownership and acceptance criteria.
